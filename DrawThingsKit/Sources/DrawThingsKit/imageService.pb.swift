@@ -17,22 +17,22 @@ import SwiftProtobuf
 // Please ensure that you are building against the same version of the API
 // that was used to generate this file.
 fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAPIVersionCheck {
-  struct _2: SwiftProtobuf.ProtobufAPIVersion_2 {}
-  typealias Version = _2
+  public struct _2: SwiftProtobuf.ProtobufAPIVersion_2 {}
+  public typealias Version = _2
 }
 
-enum DeviceType: SwiftProtobuf.Enum, Swift.CaseIterable {
-  typealias RawValue = Int
+public enum DeviceType: SwiftProtobuf.Enum, Swift.CaseIterable {
+  public typealias RawValue = Int
   case phone // = 0
   case tablet // = 1
   case laptop // = 2
   case UNRECOGNIZED(Int)
 
-  init() {
+  public init() {
     self = .phone
   }
 
-  init?(rawValue: Int) {
+  public init?(rawValue: Int) {
     switch rawValue {
     case 0: self = .phone
     case 1: self = .tablet
@@ -41,7 +41,7 @@ enum DeviceType: SwiftProtobuf.Enum, Swift.CaseIterable {
     }
   }
 
-  var rawValue: Int {
+  public var rawValue: Int {
     switch self {
     case .phone: return 0
     case .tablet: return 1
@@ -51,7 +51,7 @@ enum DeviceType: SwiftProtobuf.Enum, Swift.CaseIterable {
   }
 
   // The compiler won't synthesize support with the UNRECOGNIZED case.
-  static let allCases: [DeviceType] = [
+  public static let allCases: [DeviceType] = [
     .phone,
     .tablet,
     .laptop,
@@ -59,267 +59,267 @@ enum DeviceType: SwiftProtobuf.Enum, Swift.CaseIterable {
 
 }
 
-struct EchoRequest: Sendable {
+public struct EchoRequest: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var name: String = String()
+  public var name: String = String()
 
   /// The secret use to authenticate if needed.
-  var sharedSecret: String {
+  public var sharedSecret: String {
     get {return _sharedSecret ?? String()}
     set {_sharedSecret = newValue}
   }
   /// Returns true if `sharedSecret` has been explicitly set.
-  var hasSharedSecret: Bool {return self._sharedSecret != nil}
+  public var hasSharedSecret: Bool {return self._sharedSecret != nil}
   /// Clears the value of `sharedSecret`. Subsequent reads from it will return its default value.
-  mutating func clearSharedSecret() {self._sharedSecret = nil}
+  public mutating func clearSharedSecret() {self._sharedSecret = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _sharedSecret: String? = nil
 }
 
-struct EchoReply: Sendable {
+public struct EchoReply: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var message: String = String()
+  public var message: String = String()
 
-  var files: [String] = []
+  public var files: [String] = []
 
-  var override: MetadataOverride {
+  public var override: MetadataOverride {
     get {return _override ?? MetadataOverride()}
     set {_override = newValue}
   }
   /// Returns true if `override` has been explicitly set.
-  var hasOverride: Bool {return self._override != nil}
+  public var hasOverride: Bool {return self._override != nil}
   /// Clears the value of `override`. Subsequent reads from it will return its default value.
-  mutating func clearOverride() {self._override = nil}
+  public mutating func clearOverride() {self._override = nil}
 
   /// If this is true, sharedSecret is required.
-  var sharedSecretMissing: Bool = false
+  public var sharedSecretMissing: Bool = false
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _override: MetadataOverride? = nil
 }
 
-struct FileListRequest: Sendable {
+public struct FileListRequest: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var files: [String] = []
+  public var files: [String] = []
 
-  var filesWithHash: [String] = []
+  public var filesWithHash: [String] = []
 
   /// The secret use to authenticate if needed.
-  var sharedSecret: String {
+  public var sharedSecret: String {
     get {return _sharedSecret ?? String()}
     set {_sharedSecret = newValue}
   }
   /// Returns true if `sharedSecret` has been explicitly set.
-  var hasSharedSecret: Bool {return self._sharedSecret != nil}
+  public var hasSharedSecret: Bool {return self._sharedSecret != nil}
   /// Clears the value of `sharedSecret`. Subsequent reads from it will return its default value.
-  mutating func clearSharedSecret() {self._sharedSecret = nil}
+  public mutating func clearSharedSecret() {self._sharedSecret = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _sharedSecret: String? = nil
 }
 
-struct FileExistenceResponse: Sendable {
+public struct FileExistenceResponse: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var files: [String] = []
+  public var files: [String] = []
 
-  var existences: [Bool] = []
+  public var existences: [Bool] = []
 
-  var hashes: [Data] = []
+  public var hashes: [Data] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct MetadataOverride: Sendable {
+public struct MetadataOverride: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var models: Data = Data()
+  public var models: Data = Data()
 
-  var loras: Data = Data()
+  public var loras: Data = Data()
 
-  var controlNets: Data = Data()
+  public var controlNets: Data = Data()
 
-  var textualInversions: Data = Data()
+  public var textualInversions: Data = Data()
 
-  var upscalers: Data = Data()
+  public var upscalers: Data = Data()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
 /// parameters in this Request is exactly same as generate function in ImageGenerator
-struct ImageGenerationRequest: @unchecked Sendable {
+public struct ImageGenerationRequest: @unchecked Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
   /// Image data as sha256 content.
-  var image: Data {
+  public var image: Data {
     get {return _storage._image ?? Data()}
     set {_uniqueStorage()._image = newValue}
   }
   /// Returns true if `image` has been explicitly set.
-  var hasImage: Bool {return _storage._image != nil}
+  public var hasImage: Bool {return _storage._image != nil}
   /// Clears the value of `image`. Subsequent reads from it will return its default value.
-  mutating func clearImage() {_uniqueStorage()._image = nil}
+  public mutating func clearImage() {_uniqueStorage()._image = nil}
 
-  var scaleFactor: Int32 {
+  public var scaleFactor: Int32 {
     get {return _storage._scaleFactor}
     set {_uniqueStorage()._scaleFactor = newValue}
   }
 
   /// Optional  Mask data as sha256 content.
-  var mask: Data {
+  public var mask: Data {
     get {return _storage._mask ?? Data()}
     set {_uniqueStorage()._mask = newValue}
   }
   /// Returns true if `mask` has been explicitly set.
-  var hasMask: Bool {return _storage._mask != nil}
+  public var hasMask: Bool {return _storage._mask != nil}
   /// Clears the value of `mask`. Subsequent reads from it will return its default value.
-  mutating func clearMask() {_uniqueStorage()._mask = nil}
+  public mutating func clearMask() {_uniqueStorage()._mask = nil}
 
   /// List of hints
-  var hints: [HintProto] {
+  public var hints: [HintProto] {
     get {return _storage._hints}
     set {_uniqueStorage()._hints = newValue}
   }
 
   /// Optional prompt string
-  var prompt: String {
+  public var prompt: String {
     get {return _storage._prompt}
     set {_uniqueStorage()._prompt = newValue}
   }
 
   /// Optional negative prompt string
-  var negativePrompt: String {
+  public var negativePrompt: String {
     get {return _storage._negativePrompt}
     set {_uniqueStorage()._negativePrompt = newValue}
   }
 
   /// Configuration data as bytes (FlatBuffer)
-  var configuration: Data {
+  public var configuration: Data {
     get {return _storage._configuration}
     set {_uniqueStorage()._configuration = newValue}
   }
 
   /// Override the existing metadata on various Zoo objects.
-  var override: MetadataOverride {
+  public var override: MetadataOverride {
     get {return _storage._override ?? MetadataOverride()}
     set {_uniqueStorage()._override = newValue}
   }
   /// Returns true if `override` has been explicitly set.
-  var hasOverride: Bool {return _storage._override != nil}
+  public var hasOverride: Bool {return _storage._override != nil}
   /// Clears the value of `override`. Subsequent reads from it will return its default value.
-  mutating func clearOverride() {_uniqueStorage()._override = nil}
+  public mutating func clearOverride() {_uniqueStorage()._override = nil}
 
   /// Keywords send to the ImageGenerator, not useful for local generation.
-  var keywords: [String] {
+  public var keywords: [String] {
     get {return _storage._keywords}
     set {_uniqueStorage()._keywords = newValue}
   }
 
   /// The name of the client.
-  var user: String {
+  public var user: String {
     get {return _storage._user}
     set {_uniqueStorage()._user = newValue}
   }
 
   /// The type of the device uses.
-  var device: DeviceType {
+  public var device: DeviceType {
     get {return _storage._device}
     set {_uniqueStorage()._device = newValue}
   }
 
   /// The image data as array of bytes. It is addressed by its sha256 content. This is modeled as content-addressable storage.
-  var contents: [Data] {
+  public var contents: [Data] {
     get {return _storage._contents}
     set {_uniqueStorage()._contents = newValue}
   }
 
   /// The secret use to authenticate if needed.
-  var sharedSecret: String {
+  public var sharedSecret: String {
     get {return _storage._sharedSecret ?? String()}
     set {_uniqueStorage()._sharedSecret = newValue}
   }
   /// Returns true if `sharedSecret` has been explicitly set.
-  var hasSharedSecret: Bool {return _storage._sharedSecret != nil}
+  public var hasSharedSecret: Bool {return _storage._sharedSecret != nil}
   /// Clears the value of `sharedSecret`. Subsequent reads from it will return its default value.
-  mutating func clearSharedSecret() {_uniqueStorage()._sharedSecret = nil}
+  public mutating func clearSharedSecret() {_uniqueStorage()._sharedSecret = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-struct HintProto: Sendable {
+public struct HintProto: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
   /// hintType enum (key)
-  var hintType: String = String()
+  public var hintType: String = String()
 
   /// Repeated list of tensors with associated float
-  var tensors: [TensorAndWeight] = []
+  public var tensors: [TensorAndWeight] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
 /// Message to store each tensor and its associated float score
-struct TensorAndWeight: Sendable {
+public struct TensorAndWeight: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
   /// Tensor data as sha256 to the content.
-  var tensor: Data = Data()
+  public var tensor: Data = Data()
 
   /// Associated float score for the tensor
-  var weight: Float = 0
+  public var weight: Float = 0
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct ImageGenerationSignpostProto: Sendable {
+public struct ImageGenerationSignpostProto: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var signpost: ImageGenerationSignpostProto.OneOf_Signpost? = nil
+  public var signpost: ImageGenerationSignpostProto.OneOf_Signpost? = nil
 
-  var textEncoded: ImageGenerationSignpostProto.TextEncoded {
+  public var textEncoded: ImageGenerationSignpostProto.TextEncoded {
     get {
       if case .textEncoded(let v)? = signpost {return v}
       return ImageGenerationSignpostProto.TextEncoded()
@@ -327,7 +327,7 @@ struct ImageGenerationSignpostProto: Sendable {
     set {signpost = .textEncoded(newValue)}
   }
 
-  var imageEncoded: ImageGenerationSignpostProto.ImageEncoded {
+  public var imageEncoded: ImageGenerationSignpostProto.ImageEncoded {
     get {
       if case .imageEncoded(let v)? = signpost {return v}
       return ImageGenerationSignpostProto.ImageEncoded()
@@ -335,7 +335,7 @@ struct ImageGenerationSignpostProto: Sendable {
     set {signpost = .imageEncoded(newValue)}
   }
 
-  var sampling: ImageGenerationSignpostProto.Sampling {
+  public var sampling: ImageGenerationSignpostProto.Sampling {
     get {
       if case .sampling(let v)? = signpost {return v}
       return ImageGenerationSignpostProto.Sampling()
@@ -343,7 +343,7 @@ struct ImageGenerationSignpostProto: Sendable {
     set {signpost = .sampling(newValue)}
   }
 
-  var imageDecoded: ImageGenerationSignpostProto.ImageDecoded {
+  public var imageDecoded: ImageGenerationSignpostProto.ImageDecoded {
     get {
       if case .imageDecoded(let v)? = signpost {return v}
       return ImageGenerationSignpostProto.ImageDecoded()
@@ -351,7 +351,7 @@ struct ImageGenerationSignpostProto: Sendable {
     set {signpost = .imageDecoded(newValue)}
   }
 
-  var secondPassImageEncoded: ImageGenerationSignpostProto.SecondPassImageEncoded {
+  public var secondPassImageEncoded: ImageGenerationSignpostProto.SecondPassImageEncoded {
     get {
       if case .secondPassImageEncoded(let v)? = signpost {return v}
       return ImageGenerationSignpostProto.SecondPassImageEncoded()
@@ -359,7 +359,7 @@ struct ImageGenerationSignpostProto: Sendable {
     set {signpost = .secondPassImageEncoded(newValue)}
   }
 
-  var secondPassSampling: ImageGenerationSignpostProto.SecondPassSampling {
+  public var secondPassSampling: ImageGenerationSignpostProto.SecondPassSampling {
     get {
       if case .secondPassSampling(let v)? = signpost {return v}
       return ImageGenerationSignpostProto.SecondPassSampling()
@@ -367,7 +367,7 @@ struct ImageGenerationSignpostProto: Sendable {
     set {signpost = .secondPassSampling(newValue)}
   }
 
-  var secondPassImageDecoded: ImageGenerationSignpostProto.SecondPassImageDecoded {
+  public var secondPassImageDecoded: ImageGenerationSignpostProto.SecondPassImageDecoded {
     get {
       if case .secondPassImageDecoded(let v)? = signpost {return v}
       return ImageGenerationSignpostProto.SecondPassImageDecoded()
@@ -375,7 +375,7 @@ struct ImageGenerationSignpostProto: Sendable {
     set {signpost = .secondPassImageDecoded(newValue)}
   }
 
-  var faceRestored: ImageGenerationSignpostProto.FaceRestored {
+  public var faceRestored: ImageGenerationSignpostProto.FaceRestored {
     get {
       if case .faceRestored(let v)? = signpost {return v}
       return ImageGenerationSignpostProto.FaceRestored()
@@ -383,7 +383,7 @@ struct ImageGenerationSignpostProto: Sendable {
     set {signpost = .faceRestored(newValue)}
   }
 
-  var imageUpscaled: ImageGenerationSignpostProto.ImageUpscaled {
+  public var imageUpscaled: ImageGenerationSignpostProto.ImageUpscaled {
     get {
       if case .imageUpscaled(let v)? = signpost {return v}
       return ImageGenerationSignpostProto.ImageUpscaled()
@@ -391,9 +391,9 @@ struct ImageGenerationSignpostProto: Sendable {
     set {signpost = .imageUpscaled(newValue)}
   }
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  enum OneOf_Signpost: Equatable, Sendable {
+  public enum OneOf_Signpost: Equatable, Sendable {
     case textEncoded(ImageGenerationSignpostProto.TextEncoded)
     case imageEncoded(ImageGenerationSignpostProto.ImageEncoded)
     case sampling(ImageGenerationSignpostProto.Sampling)
@@ -406,160 +406,160 @@ struct ImageGenerationSignpostProto: Sendable {
 
   }
 
-  struct TextEncoded: Sendable {
+  public struct TextEncoded: Sendable {
     // SwiftProtobuf.Message conformance is added in an extension below. See the
     // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
     // methods supported on all messages.
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-    init() {}
+    public init() {}
   }
 
-  struct ImageEncoded: Sendable {
+  public struct ImageEncoded: Sendable {
     // SwiftProtobuf.Message conformance is added in an extension below. See the
     // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
     // methods supported on all messages.
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-    init() {}
+    public init() {}
   }
 
-  struct Sampling: Sendable {
+  public struct Sampling: Sendable {
     // SwiftProtobuf.Message conformance is added in an extension below. See the
     // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
     // methods supported on all messages.
 
-    var step: Int32 = 0
+    public var step: Int32 = 0
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-    init() {}
+    public init() {}
   }
 
-  struct ImageDecoded: Sendable {
+  public struct ImageDecoded: Sendable {
     // SwiftProtobuf.Message conformance is added in an extension below. See the
     // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
     // methods supported on all messages.
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-    init() {}
+    public init() {}
   }
 
-  struct SecondPassImageEncoded: Sendable {
+  public struct SecondPassImageEncoded: Sendable {
     // SwiftProtobuf.Message conformance is added in an extension below. See the
     // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
     // methods supported on all messages.
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-    init() {}
+    public init() {}
   }
 
-  struct SecondPassSampling: Sendable {
+  public struct SecondPassSampling: Sendable {
     // SwiftProtobuf.Message conformance is added in an extension below. See the
     // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
     // methods supported on all messages.
 
-    var step: Int32 = 0
+    public var step: Int32 = 0
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-    init() {}
+    public init() {}
   }
 
-  struct SecondPassImageDecoded: Sendable {
+  public struct SecondPassImageDecoded: Sendable {
     // SwiftProtobuf.Message conformance is added in an extension below. See the
     // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
     // methods supported on all messages.
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-    init() {}
+    public init() {}
   }
 
-  struct FaceRestored: Sendable {
+  public struct FaceRestored: Sendable {
     // SwiftProtobuf.Message conformance is added in an extension below. See the
     // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
     // methods supported on all messages.
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-    init() {}
+    public init() {}
   }
 
-  struct ImageUpscaled: Sendable {
+  public struct ImageUpscaled: Sendable {
     // SwiftProtobuf.Message conformance is added in an extension below. See the
     // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
     // methods supported on all messages.
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-    init() {}
+    public init() {}
   }
 
-  init() {}
+  public init() {}
 }
 
-struct ImageGenerationResponse: Sendable {
+public struct ImageGenerationResponse: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
   /// Generated image data as bytes.
-  var generatedImages: [Data] = []
+  public var generatedImages: [Data] = []
 
   /// Single current signpost.
-  var currentSignpost: ImageGenerationSignpostProto {
+  public var currentSignpost: ImageGenerationSignpostProto {
     get {return _currentSignpost ?? ImageGenerationSignpostProto()}
     set {_currentSignpost = newValue}
   }
   /// Returns true if `currentSignpost` has been explicitly set.
-  var hasCurrentSignpost: Bool {return self._currentSignpost != nil}
+  public var hasCurrentSignpost: Bool {return self._currentSignpost != nil}
   /// Clears the value of `currentSignpost`. Subsequent reads from it will return its default value.
-  mutating func clearCurrentSignpost() {self._currentSignpost = nil}
+  public mutating func clearCurrentSignpost() {self._currentSignpost = nil}
 
   /// Collection of signposts.
-  var signposts: [ImageGenerationSignpostProto] = []
+  public var signposts: [ImageGenerationSignpostProto] = []
 
   /// preview generating image data as bytes.
-  var previewImage: Data {
+  public var previewImage: Data {
     get {return _previewImage ?? Data()}
     set {_previewImage = newValue}
   }
   /// Returns true if `previewImage` has been explicitly set.
-  var hasPreviewImage: Bool {return self._previewImage != nil}
+  public var hasPreviewImage: Bool {return self._previewImage != nil}
   /// Clears the value of `previewImage`. Subsequent reads from it will return its default value.
-  mutating func clearPreviewImage() {self._previewImage = nil}
+  public mutating func clearPreviewImage() {self._previewImage = nil}
 
   /// The scale factor of the image.
-  var scaleFactor: Int32 {
+  public var scaleFactor: Int32 {
     get {return _scaleFactor ?? 0}
     set {_scaleFactor = newValue}
   }
   /// Returns true if `scaleFactor` has been explicitly set.
-  var hasScaleFactor: Bool {return self._scaleFactor != nil}
+  public var hasScaleFactor: Bool {return self._scaleFactor != nil}
   /// Clears the value of `scaleFactor`. Subsequent reads from it will return its default value.
-  mutating func clearScaleFactor() {self._scaleFactor = nil}
+  public mutating func clearScaleFactor() {self._scaleFactor = nil}
 
   /// Tags to track which server responded to the generation request.
-  var tags: [String] = []
+  public var tags: [String] = []
 
   /// The size of final image will be sent in the next payload.
-  var downloadSize: Int64 {
+  public var downloadSize: Int64 {
     get {return _downloadSize ?? 0}
     set {_downloadSize = newValue}
   }
   /// Returns true if `downloadSize` has been explicitly set.
-  var hasDownloadSize: Bool {return self._downloadSize != nil}
+  public var hasDownloadSize: Bool {return self._downloadSize != nil}
   /// Clears the value of `downloadSize`. Subsequent reads from it will return its default value.
-  mutating func clearDownloadSize() {self._downloadSize = nil}
+  public mutating func clearDownloadSize() {self._downloadSize = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _currentSignpost: ImageGenerationSignpostProto? = nil
   fileprivate var _previewImage: Data? = nil
@@ -567,69 +567,69 @@ struct ImageGenerationResponse: Sendable {
   fileprivate var _downloadSize: Int64? = nil
 }
 
-struct FileChunk: Sendable {
+public struct FileChunk: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var content: Data = Data()
+  public var content: Data = Data()
 
-  var filename: String = String()
+  public var filename: String = String()
 
-  var offset: Int64 = 0
+  public var offset: Int64 = 0
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct InitUploadRequest: Sendable {
+public struct InitUploadRequest: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
   /// Name of the file to be uploaded.
-  var filename: String = String()
+  public var filename: String = String()
 
   /// SHA-256 hash of the file.
-  var sha256: Data = Data()
+  public var sha256: Data = Data()
 
   /// Total size of the file in bytes.
-  var totalSize: Int64 = 0
+  public var totalSize: Int64 = 0
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct UploadResponse: Sendable {
+public struct UploadResponse: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var chunkUploadSuccess: Bool = false
+  public var chunkUploadSuccess: Bool = false
 
-  var receivedOffset: Int64 = 0
+  public var receivedOffset: Int64 = 0
 
-  var message: String = String()
+  public var message: String = String()
 
-  var filename: String = String()
+  public var filename: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
 /// Union type for either an InitUploadRequest or FileChunk.
-struct FileUploadRequest: Sendable {
+public struct FileUploadRequest: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var request: FileUploadRequest.OneOf_Request? = nil
+  public var request: FileUploadRequest.OneOf_Request? = nil
 
   /// Initial upload request to sync SHA and filename.
-  var initRequest: InitUploadRequest {
+  public var initRequest: InitUploadRequest {
     get {
       if case .initRequest(let v)? = request {return v}
       return InitUploadRequest()
@@ -638,7 +638,7 @@ struct FileUploadRequest: Sendable {
   }
 
   /// File chunk data.
-  var chunk: FileChunk {
+  public var chunk: FileChunk {
     get {
       if case .chunk(let v)? = request {return v}
       return FileChunk()
@@ -647,18 +647,18 @@ struct FileUploadRequest: Sendable {
   }
 
   /// The secret use to authenticate if needed.
-  var sharedSecret: String {
+  public var sharedSecret: String {
     get {return _sharedSecret ?? String()}
     set {_sharedSecret = newValue}
   }
   /// Returns true if `sharedSecret` has been explicitly set.
-  var hasSharedSecret: Bool {return self._sharedSecret != nil}
+  public var hasSharedSecret: Bool {return self._sharedSecret != nil}
   /// Clears the value of `sharedSecret`. Subsequent reads from it will return its default value.
-  mutating func clearSharedSecret() {self._sharedSecret = nil}
+  public mutating func clearSharedSecret() {self._sharedSecret = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  enum OneOf_Request: Equatable, Sendable {
+  public enum OneOf_Request: Equatable, Sendable {
     /// Initial upload request to sync SHA and filename.
     case initRequest(InitUploadRequest)
     /// File chunk data.
@@ -666,7 +666,7 @@ struct FileUploadRequest: Sendable {
 
   }
 
-  init() {}
+  public init() {}
 
   fileprivate var _sharedSecret: String? = nil
 }
@@ -674,14 +674,14 @@ struct FileUploadRequest: Sendable {
 // MARK: - Code below here is support for the SwiftProtobuf runtime.
 
 extension DeviceType: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{2}\0PHONE\0\u{1}TABLET\0\u{1}LAPTOP\0")
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{2}\0PHONE\0\u{1}TABLET\0\u{1}LAPTOP\0")
 }
 
 extension EchoRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = "EchoRequest"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}name\0\u{1}sharedSecret\0")
+  public static let protoMessageName: String = "EchoRequest"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}name\0\u{1}sharedSecret\0")
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -694,7 +694,7 @@ extension EchoRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -708,7 +708,7 @@ extension EchoRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: EchoRequest, rhs: EchoRequest) -> Bool {
+  public static func ==(lhs: EchoRequest, rhs: EchoRequest) -> Bool {
     if lhs.name != rhs.name {return false}
     if lhs._sharedSecret != rhs._sharedSecret {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
@@ -717,10 +717,10 @@ extension EchoRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
 }
 
 extension EchoReply: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = "EchoReply"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}message\0\u{1}files\0\u{1}override\0\u{1}sharedSecretMissing\0")
+  public static let protoMessageName: String = "EchoReply"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}message\0\u{1}files\0\u{1}override\0\u{1}sharedSecretMissing\0")
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -735,7 +735,7 @@ extension EchoReply: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementation
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -755,7 +755,7 @@ extension EchoReply: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementation
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: EchoReply, rhs: EchoReply) -> Bool {
+  public static func ==(lhs: EchoReply, rhs: EchoReply) -> Bool {
     if lhs.message != rhs.message {return false}
     if lhs.files != rhs.files {return false}
     if lhs._override != rhs._override {return false}
@@ -766,10 +766,10 @@ extension EchoReply: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementation
 }
 
 extension FileListRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = "FileListRequest"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}files\0\u{1}filesWithHash\0\u{1}sharedSecret\0")
+  public static let protoMessageName: String = "FileListRequest"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}files\0\u{1}filesWithHash\0\u{1}sharedSecret\0")
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -783,7 +783,7 @@ extension FileListRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -800,7 +800,7 @@ extension FileListRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: FileListRequest, rhs: FileListRequest) -> Bool {
+  public static func ==(lhs: FileListRequest, rhs: FileListRequest) -> Bool {
     if lhs.files != rhs.files {return false}
     if lhs.filesWithHash != rhs.filesWithHash {return false}
     if lhs._sharedSecret != rhs._sharedSecret {return false}
@@ -810,10 +810,10 @@ extension FileListRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
 }
 
 extension FileExistenceResponse: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = "FileExistenceResponse"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}files\0\u{1}existences\0\u{1}hashes\0")
+  public static let protoMessageName: String = "FileExistenceResponse"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}files\0\u{1}existences\0\u{1}hashes\0")
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -827,7 +827,7 @@ extension FileExistenceResponse: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.files.isEmpty {
       try visitor.visitRepeatedStringField(value: self.files, fieldNumber: 1)
     }
@@ -840,7 +840,7 @@ extension FileExistenceResponse: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: FileExistenceResponse, rhs: FileExistenceResponse) -> Bool {
+  public static func ==(lhs: FileExistenceResponse, rhs: FileExistenceResponse) -> Bool {
     if lhs.files != rhs.files {return false}
     if lhs.existences != rhs.existences {return false}
     if lhs.hashes != rhs.hashes {return false}
@@ -850,10 +850,10 @@ extension FileExistenceResponse: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
 }
 
 extension MetadataOverride: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = "MetadataOverride"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}models\0\u{1}loras\0\u{1}controlNets\0\u{1}textualInversions\0\u{1}upscalers\0")
+  public static let protoMessageName: String = "MetadataOverride"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}models\0\u{1}loras\0\u{1}controlNets\0\u{1}textualInversions\0\u{1}upscalers\0")
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -869,7 +869,7 @@ extension MetadataOverride: SwiftProtobuf.Message, SwiftProtobuf._MessageImpleme
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.models.isEmpty {
       try visitor.visitSingularBytesField(value: self.models, fieldNumber: 1)
     }
@@ -888,7 +888,7 @@ extension MetadataOverride: SwiftProtobuf.Message, SwiftProtobuf._MessageImpleme
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: MetadataOverride, rhs: MetadataOverride) -> Bool {
+  public static func ==(lhs: MetadataOverride, rhs: MetadataOverride) -> Bool {
     if lhs.models != rhs.models {return false}
     if lhs.loras != rhs.loras {return false}
     if lhs.controlNets != rhs.controlNets {return false}
@@ -900,23 +900,23 @@ extension MetadataOverride: SwiftProtobuf.Message, SwiftProtobuf._MessageImpleme
 }
 
 extension ImageGenerationRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = "ImageGenerationRequest"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}image\0\u{1}scaleFactor\0\u{1}mask\0\u{1}hints\0\u{1}prompt\0\u{1}negativePrompt\0\u{1}configuration\0\u{1}override\0\u{1}keywords\0\u{1}user\0\u{1}device\0\u{1}contents\0\u{1}sharedSecret\0")
+  public static let protoMessageName: String = "ImageGenerationRequest"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}image\0\u{1}scaleFactor\0\u{1}mask\0\u{1}hints\0\u{1}prompt\0\u{1}negativePrompt\0\u{1}configuration\0\u{1}override\0\u{1}keywords\0\u{1}user\0\u{1}device\0\u{1}contents\0\u{1}sharedSecret\0")
 
   fileprivate class _StorageClass {
-    var _image: Data? = nil
-    var _scaleFactor: Int32 = 0
-    var _mask: Data? = nil
-    var _hints: [HintProto] = []
-    var _prompt: String = String()
-    var _negativePrompt: String = String()
-    var _configuration: Data = Data()
-    var _override: MetadataOverride? = nil
-    var _keywords: [String] = []
-    var _user: String = String()
-    var _device: DeviceType = .phone
-    var _contents: [Data] = []
-    var _sharedSecret: String? = nil
+    public var _image: Data? = nil
+    public var _scaleFactor: Int32 = 0
+    public var _mask: Data? = nil
+    public var _hints: [HintProto] = []
+    public var _prompt: String = String()
+    public var _negativePrompt: String = String()
+    public var _configuration: Data = Data()
+    public var _override: MetadataOverride? = nil
+    public var _keywords: [String] = []
+    public var _user: String = String()
+    public var _device: DeviceType = .phone
+    public var _contents: [Data] = []
+    public var _sharedSecret: String? = nil
 
       // This property is used as the initial default value for new instances of the type.
       // The type itself is protecting the reference to its storage via CoW semantics.
@@ -926,7 +926,7 @@ extension ImageGenerationRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageI
 
     private init() {}
 
-    init(copying source: _StorageClass) {
+    public init(copying source: _StorageClass) {
       _image = source._image
       _scaleFactor = source._scaleFactor
       _mask = source._mask
@@ -950,7 +950,7 @@ extension ImageGenerationRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageI
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -977,7 +977,7 @@ extension ImageGenerationRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageI
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -1026,7 +1026,7 @@ extension ImageGenerationRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageI
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: ImageGenerationRequest, rhs: ImageGenerationRequest) -> Bool {
+  public static func ==(lhs: ImageGenerationRequest, rhs: ImageGenerationRequest) -> Bool {
     if lhs._storage !== rhs._storage {
       let storagesAreEqual: Bool = withExtendedLifetime((lhs._storage, rhs._storage)) { (_args: (_StorageClass, _StorageClass)) in
         let _storage = _args.0
@@ -1054,10 +1054,10 @@ extension ImageGenerationRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageI
 }
 
 extension HintProto: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = "HintProto"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}hintType\0\u{1}tensors\0")
+  public static let protoMessageName: String = "HintProto"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}hintType\0\u{1}tensors\0")
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -1070,7 +1070,7 @@ extension HintProto: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementation
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.hintType.isEmpty {
       try visitor.visitSingularStringField(value: self.hintType, fieldNumber: 1)
     }
@@ -1080,7 +1080,7 @@ extension HintProto: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementation
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: HintProto, rhs: HintProto) -> Bool {
+  public static func ==(lhs: HintProto, rhs: HintProto) -> Bool {
     if lhs.hintType != rhs.hintType {return false}
     if lhs.tensors != rhs.tensors {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
@@ -1089,10 +1089,10 @@ extension HintProto: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementation
 }
 
 extension TensorAndWeight: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = "TensorAndWeight"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}tensor\0\u{1}weight\0")
+  public static let protoMessageName: String = "TensorAndWeight"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}tensor\0\u{1}weight\0")
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -1105,7 +1105,7 @@ extension TensorAndWeight: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.tensor.isEmpty {
       try visitor.visitSingularBytesField(value: self.tensor, fieldNumber: 1)
     }
@@ -1115,7 +1115,7 @@ extension TensorAndWeight: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: TensorAndWeight, rhs: TensorAndWeight) -> Bool {
+  public static func ==(lhs: TensorAndWeight, rhs: TensorAndWeight) -> Bool {
     if lhs.tensor != rhs.tensor {return false}
     if lhs.weight != rhs.weight {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
@@ -1124,10 +1124,10 @@ extension TensorAndWeight: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
 }
 
 extension ImageGenerationSignpostProto: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = "ImageGenerationSignpostProto"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}textEncoded\0\u{1}imageEncoded\0\u{1}sampling\0\u{1}imageDecoded\0\u{1}secondPassImageEncoded\0\u{1}secondPassSampling\0\u{1}secondPassImageDecoded\0\u{1}faceRestored\0\u{1}imageUpscaled\0")
+  public static let protoMessageName: String = "ImageGenerationSignpostProto"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}textEncoded\0\u{1}imageEncoded\0\u{1}sampling\0\u{1}imageDecoded\0\u{1}secondPassImageEncoded\0\u{1}secondPassSampling\0\u{1}secondPassImageDecoded\0\u{1}faceRestored\0\u{1}imageUpscaled\0")
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -1255,7 +1255,7 @@ extension ImageGenerationSignpostProto: SwiftProtobuf.Message, SwiftProtobuf._Me
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -1302,7 +1302,7 @@ extension ImageGenerationSignpostProto: SwiftProtobuf.Message, SwiftProtobuf._Me
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: ImageGenerationSignpostProto, rhs: ImageGenerationSignpostProto) -> Bool {
+  public static func ==(lhs: ImageGenerationSignpostProto, rhs: ImageGenerationSignpostProto) -> Bool {
     if lhs.signpost != rhs.signpost {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -1310,48 +1310,48 @@ extension ImageGenerationSignpostProto: SwiftProtobuf.Message, SwiftProtobuf._Me
 }
 
 extension ImageGenerationSignpostProto.TextEncoded: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = ImageGenerationSignpostProto.protoMessageName + ".TextEncoded"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  public static let protoMessageName: String = ImageGenerationSignpostProto.protoMessageName + ".TextEncoded"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap()
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     // Load everything into unknown fields
     while try decoder.nextFieldNumber() != nil {}
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: ImageGenerationSignpostProto.TextEncoded, rhs: ImageGenerationSignpostProto.TextEncoded) -> Bool {
+  public static func ==(lhs: ImageGenerationSignpostProto.TextEncoded, rhs: ImageGenerationSignpostProto.TextEncoded) -> Bool {
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
   }
 }
 
 extension ImageGenerationSignpostProto.ImageEncoded: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = ImageGenerationSignpostProto.protoMessageName + ".ImageEncoded"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  public static let protoMessageName: String = ImageGenerationSignpostProto.protoMessageName + ".ImageEncoded"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap()
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     // Load everything into unknown fields
     while try decoder.nextFieldNumber() != nil {}
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: ImageGenerationSignpostProto.ImageEncoded, rhs: ImageGenerationSignpostProto.ImageEncoded) -> Bool {
+  public static func ==(lhs: ImageGenerationSignpostProto.ImageEncoded, rhs: ImageGenerationSignpostProto.ImageEncoded) -> Bool {
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
   }
 }
 
 extension ImageGenerationSignpostProto.Sampling: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = ImageGenerationSignpostProto.protoMessageName + ".Sampling"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}step\0")
+  public static let protoMessageName: String = ImageGenerationSignpostProto.protoMessageName + ".Sampling"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}step\0")
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -1363,14 +1363,14 @@ extension ImageGenerationSignpostProto.Sampling: SwiftProtobuf.Message, SwiftPro
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if self.step != 0 {
       try visitor.visitSingularInt32Field(value: self.step, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: ImageGenerationSignpostProto.Sampling, rhs: ImageGenerationSignpostProto.Sampling) -> Bool {
+  public static func ==(lhs: ImageGenerationSignpostProto.Sampling, rhs: ImageGenerationSignpostProto.Sampling) -> Bool {
     if lhs.step != rhs.step {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -1378,48 +1378,48 @@ extension ImageGenerationSignpostProto.Sampling: SwiftProtobuf.Message, SwiftPro
 }
 
 extension ImageGenerationSignpostProto.ImageDecoded: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = ImageGenerationSignpostProto.protoMessageName + ".ImageDecoded"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  public static let protoMessageName: String = ImageGenerationSignpostProto.protoMessageName + ".ImageDecoded"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap()
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     // Load everything into unknown fields
     while try decoder.nextFieldNumber() != nil {}
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: ImageGenerationSignpostProto.ImageDecoded, rhs: ImageGenerationSignpostProto.ImageDecoded) -> Bool {
+  public static func ==(lhs: ImageGenerationSignpostProto.ImageDecoded, rhs: ImageGenerationSignpostProto.ImageDecoded) -> Bool {
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
   }
 }
 
 extension ImageGenerationSignpostProto.SecondPassImageEncoded: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = ImageGenerationSignpostProto.protoMessageName + ".SecondPassImageEncoded"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  public static let protoMessageName: String = ImageGenerationSignpostProto.protoMessageName + ".SecondPassImageEncoded"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap()
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     // Load everything into unknown fields
     while try decoder.nextFieldNumber() != nil {}
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: ImageGenerationSignpostProto.SecondPassImageEncoded, rhs: ImageGenerationSignpostProto.SecondPassImageEncoded) -> Bool {
+  public static func ==(lhs: ImageGenerationSignpostProto.SecondPassImageEncoded, rhs: ImageGenerationSignpostProto.SecondPassImageEncoded) -> Bool {
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
   }
 }
 
 extension ImageGenerationSignpostProto.SecondPassSampling: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = ImageGenerationSignpostProto.protoMessageName + ".SecondPassSampling"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}step\0")
+  public static let protoMessageName: String = ImageGenerationSignpostProto.protoMessageName + ".SecondPassSampling"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}step\0")
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -1431,14 +1431,14 @@ extension ImageGenerationSignpostProto.SecondPassSampling: SwiftProtobuf.Message
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if self.step != 0 {
       try visitor.visitSingularInt32Field(value: self.step, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: ImageGenerationSignpostProto.SecondPassSampling, rhs: ImageGenerationSignpostProto.SecondPassSampling) -> Bool {
+  public static func ==(lhs: ImageGenerationSignpostProto.SecondPassSampling, rhs: ImageGenerationSignpostProto.SecondPassSampling) -> Bool {
     if lhs.step != rhs.step {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -1446,67 +1446,67 @@ extension ImageGenerationSignpostProto.SecondPassSampling: SwiftProtobuf.Message
 }
 
 extension ImageGenerationSignpostProto.SecondPassImageDecoded: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = ImageGenerationSignpostProto.protoMessageName + ".SecondPassImageDecoded"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  public static let protoMessageName: String = ImageGenerationSignpostProto.protoMessageName + ".SecondPassImageDecoded"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap()
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     // Load everything into unknown fields
     while try decoder.nextFieldNumber() != nil {}
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: ImageGenerationSignpostProto.SecondPassImageDecoded, rhs: ImageGenerationSignpostProto.SecondPassImageDecoded) -> Bool {
+  public static func ==(lhs: ImageGenerationSignpostProto.SecondPassImageDecoded, rhs: ImageGenerationSignpostProto.SecondPassImageDecoded) -> Bool {
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
   }
 }
 
 extension ImageGenerationSignpostProto.FaceRestored: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = ImageGenerationSignpostProto.protoMessageName + ".FaceRestored"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  public static let protoMessageName: String = ImageGenerationSignpostProto.protoMessageName + ".FaceRestored"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap()
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     // Load everything into unknown fields
     while try decoder.nextFieldNumber() != nil {}
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: ImageGenerationSignpostProto.FaceRestored, rhs: ImageGenerationSignpostProto.FaceRestored) -> Bool {
+  public static func ==(lhs: ImageGenerationSignpostProto.FaceRestored, rhs: ImageGenerationSignpostProto.FaceRestored) -> Bool {
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
   }
 }
 
 extension ImageGenerationSignpostProto.ImageUpscaled: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = ImageGenerationSignpostProto.protoMessageName + ".ImageUpscaled"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap()
+  public static let protoMessageName: String = ImageGenerationSignpostProto.protoMessageName + ".ImageUpscaled"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap()
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     // Load everything into unknown fields
     while try decoder.nextFieldNumber() != nil {}
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: ImageGenerationSignpostProto.ImageUpscaled, rhs: ImageGenerationSignpostProto.ImageUpscaled) -> Bool {
+  public static func ==(lhs: ImageGenerationSignpostProto.ImageUpscaled, rhs: ImageGenerationSignpostProto.ImageUpscaled) -> Bool {
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
   }
 }
 
 extension ImageGenerationResponse: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = "ImageGenerationResponse"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}generatedImages\0\u{1}currentSignpost\0\u{1}signposts\0\u{1}previewImage\0\u{1}scaleFactor\0\u{1}tags\0\u{1}downloadSize\0")
+  public static let protoMessageName: String = "ImageGenerationResponse"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}generatedImages\0\u{1}currentSignpost\0\u{1}signposts\0\u{1}previewImage\0\u{1}scaleFactor\0\u{1}tags\0\u{1}downloadSize\0")
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -1524,7 +1524,7 @@ extension ImageGenerationResponse: SwiftProtobuf.Message, SwiftProtobuf._Message
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -1553,7 +1553,7 @@ extension ImageGenerationResponse: SwiftProtobuf.Message, SwiftProtobuf._Message
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: ImageGenerationResponse, rhs: ImageGenerationResponse) -> Bool {
+  public static func ==(lhs: ImageGenerationResponse, rhs: ImageGenerationResponse) -> Bool {
     if lhs.generatedImages != rhs.generatedImages {return false}
     if lhs._currentSignpost != rhs._currentSignpost {return false}
     if lhs.signposts != rhs.signposts {return false}
@@ -1567,10 +1567,10 @@ extension ImageGenerationResponse: SwiftProtobuf.Message, SwiftProtobuf._Message
 }
 
 extension FileChunk: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = "FileChunk"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}content\0\u{1}filename\0\u{1}offset\0")
+  public static let protoMessageName: String = "FileChunk"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}content\0\u{1}filename\0\u{1}offset\0")
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -1584,7 +1584,7 @@ extension FileChunk: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementation
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.content.isEmpty {
       try visitor.visitSingularBytesField(value: self.content, fieldNumber: 1)
     }
@@ -1597,7 +1597,7 @@ extension FileChunk: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementation
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: FileChunk, rhs: FileChunk) -> Bool {
+  public static func ==(lhs: FileChunk, rhs: FileChunk) -> Bool {
     if lhs.content != rhs.content {return false}
     if lhs.filename != rhs.filename {return false}
     if lhs.offset != rhs.offset {return false}
@@ -1607,10 +1607,10 @@ extension FileChunk: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementation
 }
 
 extension InitUploadRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = "InitUploadRequest"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}filename\0\u{1}sha256\0\u{1}totalSize\0")
+  public static let protoMessageName: String = "InitUploadRequest"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}filename\0\u{1}sha256\0\u{1}totalSize\0")
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -1624,7 +1624,7 @@ extension InitUploadRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.filename.isEmpty {
       try visitor.visitSingularStringField(value: self.filename, fieldNumber: 1)
     }
@@ -1637,7 +1637,7 @@ extension InitUploadRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: InitUploadRequest, rhs: InitUploadRequest) -> Bool {
+  public static func ==(lhs: InitUploadRequest, rhs: InitUploadRequest) -> Bool {
     if lhs.filename != rhs.filename {return false}
     if lhs.sha256 != rhs.sha256 {return false}
     if lhs.totalSize != rhs.totalSize {return false}
@@ -1647,10 +1647,10 @@ extension InitUploadRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
 }
 
 extension UploadResponse: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = "UploadResponse"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}chunkUploadSuccess\0\u{1}receivedOffset\0\u{1}message\0\u{1}filename\0")
+  public static let protoMessageName: String = "UploadResponse"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}chunkUploadSuccess\0\u{1}receivedOffset\0\u{1}message\0\u{1}filename\0")
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -1665,7 +1665,7 @@ extension UploadResponse: SwiftProtobuf.Message, SwiftProtobuf._MessageImplement
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if self.chunkUploadSuccess != false {
       try visitor.visitSingularBoolField(value: self.chunkUploadSuccess, fieldNumber: 1)
     }
@@ -1681,7 +1681,7 @@ extension UploadResponse: SwiftProtobuf.Message, SwiftProtobuf._MessageImplement
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: UploadResponse, rhs: UploadResponse) -> Bool {
+  public static func ==(lhs: UploadResponse, rhs: UploadResponse) -> Bool {
     if lhs.chunkUploadSuccess != rhs.chunkUploadSuccess {return false}
     if lhs.receivedOffset != rhs.receivedOffset {return false}
     if lhs.message != rhs.message {return false}
@@ -1692,10 +1692,10 @@ extension UploadResponse: SwiftProtobuf.Message, SwiftProtobuf._MessageImplement
 }
 
 extension FileUploadRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = "FileUploadRequest"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}initRequest\0\u{1}chunk\0\u{1}sharedSecret\0")
+  public static let protoMessageName: String = "FileUploadRequest"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}initRequest\0\u{1}chunk\0\u{1}sharedSecret\0")
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -1733,7 +1733,7 @@ extension FileUploadRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -1755,7 +1755,7 @@ extension FileUploadRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: FileUploadRequest, rhs: FileUploadRequest) -> Bool {
+  public static func ==(lhs: FileUploadRequest, rhs: FileUploadRequest) -> Bool {
     if lhs.request != rhs.request {return false}
     if lhs._sharedSecret != rhs._sharedSecret {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}

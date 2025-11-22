@@ -9,7 +9,7 @@ public actor DrawThingsService {
     private let group: EventLoopGroup
     private let channel: GRPCChannel
     private var models: MetadataOverride?
-    
+
     public init(address: String, useTLS: Bool = true) throws {
         let components = address.components(separatedBy: ":")
         let host = components.first ?? "localhost"
@@ -33,14 +33,15 @@ public actor DrawThingsService {
         let request = EchoRequest.with {
             $0.name = name
         }
-        
-        let response = try await client.echo(request)
-        
+
+        let call = client.echo(request)
+        let response = try await call.response.get()
+
         // Cache the models metadata for future requests
         if response.hasOverride {
             self.models = response.override
         }
-        
+
         return response
     }
     
@@ -87,21 +88,31 @@ public actor DrawThingsService {
             }
         }
         
-        var generatedImages: [Data] = []
-        
-        let responseStream = client.generateImage(request)
-        
-        for try await response in responseStream {
-            // Handle progress updates
-            if response.hasCurrentSignpost {
-                await progressHandler(response.currentSignpost)
+        return try await withCheckedThrowingContinuation { continuation in
+            var generatedImages: [Data] = []
+            var error: Error?
+
+            let call = client.generateImage(request) { response in
+                // Handle progress updates
+                if response.hasCurrentSignpost {
+                    Task {
+                        await progressHandler(response.currentSignpost)
+                    }
+                }
+
+                // Collect generated images
+                generatedImages.append(contentsOf: response.generatedImages)
             }
-            
-            // Collect generated images
-            generatedImages.append(contentsOf: response.generatedImages)
+
+            call.status.whenComplete { result in
+                switch result {
+                case .success:
+                    continuation.resume(returning: generatedImages)
+                case .failure(let err):
+                    continuation.resume(throwing: err)
+                }
+            }
         }
-        
-        return generatedImages
     }
     
     public func checkFilesExist(files: [String], filesWithHash: [String] = []) async throws -> FileExistenceResponse {
@@ -109,7 +120,8 @@ public actor DrawThingsService {
             $0.files = files
             $0.filesWithHash = filesWithHash
         }
-        
-        return try await client.filesExist(request)
+
+        let call = client.filesExist(request)
+        return try await call.response.get()
     }
 }

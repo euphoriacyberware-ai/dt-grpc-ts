@@ -16,41 +16,41 @@ import SwiftProtobuf
 // Please ensure that you are building against the same version of the API
 // that was used to generate this file.
 fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAPIVersionCheck {
-  struct _2: SwiftProtobuf.ProtobufAPIVersion_2 {}
-  typealias Version = _2
+  public struct _2: SwiftProtobuf.ProtobufAPIVersion_2 {}
+  public typealias Version = _2
 }
 
-struct GPUServerRequest: Sendable {
+public struct GPUServerRequest: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var operation: GPUServerRequest.Operation = .unspecified
+  public var operation: GPUServerRequest.Operation = .unspecified
 
-  var serverConfig: GPUServerRequest.ServerConfig {
+  public var serverConfig: GPUServerRequest.ServerConfig {
     get {return _serverConfig ?? GPUServerRequest.ServerConfig()}
     set {_serverConfig = newValue}
   }
   /// Returns true if `serverConfig` has been explicitly set.
-  var hasServerConfig: Bool {return self._serverConfig != nil}
+  public var hasServerConfig: Bool {return self._serverConfig != nil}
   /// Clears the value of `serverConfig`. Subsequent reads from it will return its default value.
-  mutating func clearServerConfig() {self._serverConfig = nil}
+  public mutating func clearServerConfig() {self._serverConfig = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
   /// Operation type to perform
-  enum Operation: SwiftProtobuf.Enum, Swift.CaseIterable {
-    typealias RawValue = Int
+  public enum Operation: SwiftProtobuf.Enum, Swift.CaseIterable {
+    public typealias RawValue = Int
     case unspecified // = 0
     case add // = 1
     case remove // = 2
     case UNRECOGNIZED(Int)
 
-    init() {
+    public init() {
       self = .unspecified
     }
 
-    init?(rawValue: Int) {
+    public init?(rawValue: Int) {
       switch rawValue {
       case 0: self = .unspecified
       case 1: self = .add
@@ -59,7 +59,7 @@ struct GPUServerRequest: Sendable {
       }
     }
 
-    var rawValue: Int {
+    public var rawValue: Int {
       switch self {
       case .unspecified: return 0
       case .add: return 1
@@ -69,7 +69,7 @@ struct GPUServerRequest: Sendable {
     }
 
     // The compiler won't synthesize support with the UNRECOGNIZED case.
-    static let allCases: [GPUServerRequest.Operation] = [
+    public static let allCases: [GPUServerRequest.Operation] = [
       .unspecified,
       .add,
       .remove,
@@ -78,121 +78,121 @@ struct GPUServerRequest: Sendable {
   }
 
   /// Server configuration details
-  struct ServerConfig: Sendable {
+  public struct ServerConfig: Sendable {
     // SwiftProtobuf.Message conformance is added in an extension below. See the
     // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
     // methods supported on all messages.
 
-    var address: String = String()
+    public var address: String = String()
 
-    var port: Int32 = 0
+    public var port: Int32 = 0
 
-    var isHighPriority: Bool = false
+    public var isHighPriority: Bool = false
 
-    var unknownFields = SwiftProtobuf.UnknownStorage()
+    public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-    init() {}
+    public init() {}
   }
 
-  init() {}
+  public init() {}
 
   fileprivate var _serverConfig: GPUServerRequest.ServerConfig? = nil
 }
 
-struct GPUServerResponse: Sendable {
+public struct GPUServerResponse: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var message: String = String()
+  public var message: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct ThrottlingRequest: Sendable {
+public struct ThrottlingRequest: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
   /// e.g. {"request_in_5min": 10, "request_in_10min": 20}
-  var limitConfig: Dictionary<String,Int32> = [:]
+  public var limitConfig: Dictionary<String,Int32> = [:]
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct ThrottlingResponse: Sendable {
+public struct ThrottlingResponse: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var message: String = String()
+  public var message: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct UpdatePemRequest: Sendable {
+public struct UpdatePemRequest: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var message: String = String()
+  public var message: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct UpdatePemResponse: Sendable {
+public struct UpdatePemResponse: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var message: String = String()
+  public var message: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct UpdateModelListRequest: Sendable {
+public struct UpdateModelListRequest: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var message: String = String()
+  public var message: String = String()
 
-  var files: [String] = []
+  public var files: [String] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct UpdateModelListResponse: Sendable {
+public struct UpdateModelListResponse: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var message: String = String()
+  public var message: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
 // MARK: - Code below here is support for the SwiftProtobuf runtime.
 
 extension GPUServerRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = "GPUServerRequest"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}operation\0\u{3}server_config\0")
+  public static let protoMessageName: String = "GPUServerRequest"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}operation\0\u{3}server_config\0")
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -205,7 +205,7 @@ extension GPUServerRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImpleme
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -219,7 +219,7 @@ extension GPUServerRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImpleme
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: GPUServerRequest, rhs: GPUServerRequest) -> Bool {
+  public static func ==(lhs: GPUServerRequest, rhs: GPUServerRequest) -> Bool {
     if lhs.operation != rhs.operation {return false}
     if lhs._serverConfig != rhs._serverConfig {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
@@ -228,14 +228,14 @@ extension GPUServerRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImpleme
 }
 
 extension GPUServerRequest.Operation: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{2}\0UNSPECIFIED\0\u{1}ADD\0\u{1}REMOVE\0")
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{2}\0UNSPECIFIED\0\u{1}ADD\0\u{1}REMOVE\0")
 }
 
 extension GPUServerRequest.ServerConfig: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = GPUServerRequest.protoMessageName + ".ServerConfig"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}address\0\u{1}port\0\u{1}isHighPriority\0")
+  public static let protoMessageName: String = GPUServerRequest.protoMessageName + ".ServerConfig"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}address\0\u{1}port\0\u{1}isHighPriority\0")
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -249,7 +249,7 @@ extension GPUServerRequest.ServerConfig: SwiftProtobuf.Message, SwiftProtobuf._M
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.address.isEmpty {
       try visitor.visitSingularStringField(value: self.address, fieldNumber: 1)
     }
@@ -262,7 +262,7 @@ extension GPUServerRequest.ServerConfig: SwiftProtobuf.Message, SwiftProtobuf._M
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: GPUServerRequest.ServerConfig, rhs: GPUServerRequest.ServerConfig) -> Bool {
+  public static func ==(lhs: GPUServerRequest.ServerConfig, rhs: GPUServerRequest.ServerConfig) -> Bool {
     if lhs.address != rhs.address {return false}
     if lhs.port != rhs.port {return false}
     if lhs.isHighPriority != rhs.isHighPriority {return false}
@@ -272,10 +272,10 @@ extension GPUServerRequest.ServerConfig: SwiftProtobuf.Message, SwiftProtobuf._M
 }
 
 extension GPUServerResponse: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = "GPUServerResponse"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}message\0")
+  public static let protoMessageName: String = "GPUServerResponse"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}message\0")
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -287,14 +287,14 @@ extension GPUServerResponse: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.message.isEmpty {
       try visitor.visitSingularStringField(value: self.message, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: GPUServerResponse, rhs: GPUServerResponse) -> Bool {
+  public static func ==(lhs: GPUServerResponse, rhs: GPUServerResponse) -> Bool {
     if lhs.message != rhs.message {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -302,10 +302,10 @@ extension GPUServerResponse: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
 }
 
 extension ThrottlingRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = "ThrottlingRequest"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{3}limit_config\0")
+  public static let protoMessageName: String = "ThrottlingRequest"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{3}limit_config\0")
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -317,14 +317,14 @@ extension ThrottlingRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.limitConfig.isEmpty {
       try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufString,SwiftProtobuf.ProtobufInt32>.self, value: self.limitConfig, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: ThrottlingRequest, rhs: ThrottlingRequest) -> Bool {
+  public static func ==(lhs: ThrottlingRequest, rhs: ThrottlingRequest) -> Bool {
     if lhs.limitConfig != rhs.limitConfig {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -332,10 +332,10 @@ extension ThrottlingRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
 }
 
 extension ThrottlingResponse: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = "ThrottlingResponse"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}message\0")
+  public static let protoMessageName: String = "ThrottlingResponse"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}message\0")
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -347,14 +347,14 @@ extension ThrottlingResponse: SwiftProtobuf.Message, SwiftProtobuf._MessageImple
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.message.isEmpty {
       try visitor.visitSingularStringField(value: self.message, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: ThrottlingResponse, rhs: ThrottlingResponse) -> Bool {
+  public static func ==(lhs: ThrottlingResponse, rhs: ThrottlingResponse) -> Bool {
     if lhs.message != rhs.message {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -362,10 +362,10 @@ extension ThrottlingResponse: SwiftProtobuf.Message, SwiftProtobuf._MessageImple
 }
 
 extension UpdatePemRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = "UpdatePemRequest"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}message\0")
+  public static let protoMessageName: String = "UpdatePemRequest"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}message\0")
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -377,14 +377,14 @@ extension UpdatePemRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImpleme
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.message.isEmpty {
       try visitor.visitSingularStringField(value: self.message, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: UpdatePemRequest, rhs: UpdatePemRequest) -> Bool {
+  public static func ==(lhs: UpdatePemRequest, rhs: UpdatePemRequest) -> Bool {
     if lhs.message != rhs.message {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -392,10 +392,10 @@ extension UpdatePemRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImpleme
 }
 
 extension UpdatePemResponse: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = "UpdatePemResponse"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}message\0")
+  public static let protoMessageName: String = "UpdatePemResponse"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}message\0")
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -407,14 +407,14 @@ extension UpdatePemResponse: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.message.isEmpty {
       try visitor.visitSingularStringField(value: self.message, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: UpdatePemResponse, rhs: UpdatePemResponse) -> Bool {
+  public static func ==(lhs: UpdatePemResponse, rhs: UpdatePemResponse) -> Bool {
     if lhs.message != rhs.message {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -422,10 +422,10 @@ extension UpdatePemResponse: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
 }
 
 extension UpdateModelListRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = "UpdateModelListRequest"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}message\0\u{1}files\0")
+  public static let protoMessageName: String = "UpdateModelListRequest"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}message\0\u{1}files\0")
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -438,7 +438,7 @@ extension UpdateModelListRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageI
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.message.isEmpty {
       try visitor.visitSingularStringField(value: self.message, fieldNumber: 1)
     }
@@ -448,7 +448,7 @@ extension UpdateModelListRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageI
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: UpdateModelListRequest, rhs: UpdateModelListRequest) -> Bool {
+  public static func ==(lhs: UpdateModelListRequest, rhs: UpdateModelListRequest) -> Bool {
     if lhs.message != rhs.message {return false}
     if lhs.files != rhs.files {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
@@ -457,10 +457,10 @@ extension UpdateModelListRequest: SwiftProtobuf.Message, SwiftProtobuf._MessageI
 }
 
 extension UpdateModelListResponse: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = "UpdateModelListResponse"
-  static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}message\0")
+  public static let protoMessageName: String = "UpdateModelListResponse"
+  public static let _protobuf_nameMap = SwiftProtobuf._NameMap(bytecode: "\0\u{1}message\0")
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -472,14 +472,14 @@ extension UpdateModelListResponse: SwiftProtobuf.Message, SwiftProtobuf._Message
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.message.isEmpty {
       try visitor.visitSingularStringField(value: self.message, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: UpdateModelListResponse, rhs: UpdateModelListResponse) -> Bool {
+  public static func ==(lhs: UpdateModelListResponse, rhs: UpdateModelListResponse) -> Bool {
     if lhs.message != rhs.message {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
