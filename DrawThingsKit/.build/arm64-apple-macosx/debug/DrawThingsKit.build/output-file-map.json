@@ -9,13 +9,6 @@
     "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/DrawThingsKit.build/Configuration.swiftdeps",
     "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/DrawThingsKit.build/Configuration.dia"
   },
-  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/Sources/DrawThingsKit/DrawThingsKit+Public.swift": {
-    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/DrawThingsKit.build/DrawThingsKit+Public.d",
-    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/DrawThingsKit.build/DrawThingsKit+Public.swift.o",
-    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/DrawThingsKit.build/DrawThingsKit+Public~partial.swiftmodule",
-    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/DrawThingsKit.build/DrawThingsKit+Public.swiftdeps",
-    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/DrawThingsKit.build/DrawThingsKit+Public.dia"
-  },
   "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/Sources/DrawThingsKit/DrawThingsKit.swift": {
     "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/DrawThingsKit.build/DrawThingsKit.d",
     "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/DrawThingsKit.build/DrawThingsKit.swift.o",

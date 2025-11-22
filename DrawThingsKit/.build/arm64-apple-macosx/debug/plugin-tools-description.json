@@ -196,8 +196,8 @@
     }
   },
   "generatedSourceTargetSet" : [
-    "SwiftProtobufPlugin",
-    "GRPCSwiftPlugin"
+    "GRPCSwiftPlugin",
+    "SwiftProtobufPlugin"
   ],
   "pluginDescriptions" : [
     {
@@ -8392,10 +8392,6 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/Sources/DrawThingsKit/DrawThingsKit+Public.swift"
-        },
-        {
-          "kind" : "file",
           "name" : "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/Sources/DrawThingsKit/DrawThingsKit.swift"
         },
         {
@@ -8428,7 +8424,6 @@
       "moduleOutputPath" : "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/Modules/DrawThingsKit.swiftmodule",
       "objects" : [
         "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/DrawThingsKit.build/Configuration.swift.o",
-        "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/DrawThingsKit.build/DrawThingsKit+Public.swift.o",
         "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/DrawThingsKit.build/DrawThingsKit.swift.o",
         "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/DrawThingsKit.build/DrawThingsService.swift.o",
         "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/DrawThingsKit.build/ImageHelpers.swift.o"
@@ -8562,10 +8557,6 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/DrawThingsKit.build/DrawThingsKit+Public.swift.o"
-        },
-        {
-          "kind" : "file",
           "name" : "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/DrawThingsKit.build/DrawThingsKit.swift.o"
         },
         {
@@ -8584,7 +8575,6 @@
       "prepareForIndexing" : false,
       "sources" : [
         "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/Sources/DrawThingsKit/Configuration.swift",
-        "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/Sources/DrawThingsKit/DrawThingsKit+Public.swift",
         "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/Sources/DrawThingsKit/DrawThingsKit.swift",
         "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/Sources/DrawThingsKit/DrawThingsService.swift",
         "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/Sources/DrawThingsKit/ImageHelpers.swift"
@@ -33604,7 +33594,6 @@
       "drawthingskit",
       "-c",
       "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/Sources/DrawThingsKit/Configuration.swift",
-      "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/Sources/DrawThingsKit/DrawThingsKit+Public.swift",
       "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/Sources/DrawThingsKit/DrawThingsKit.swift",
       "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/Sources/DrawThingsKit/DrawThingsService.swift",
       "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/Sources/DrawThingsKit/ImageHelpers.swift",
@@ -43586,10 +43575,6 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/Sources/DrawThingsKit/DrawThingsKit+Public.swift"
-        },
-        {
-          "kind" : "file",
           "name" : "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/Sources/DrawThingsKit/DrawThingsKit.swift"
         },
         {
@@ -45419,10 +45404,6 @@
         {
           "kind" : "file",
           "name" : "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/DrawThingsKit.build/Configuration.swift.o"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/DrawThingsKit.build/DrawThingsKit+Public.swift.o"
         },
         {
           "kind" : "file",

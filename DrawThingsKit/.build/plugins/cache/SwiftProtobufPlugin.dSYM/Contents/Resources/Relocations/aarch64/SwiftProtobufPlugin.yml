@@ -3,7 +3,7 @@ triple:          'arm64-apple-darwin'
 binary-path:     '/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/plugins/cache/SwiftProtobufPlugin'
 relocations:
   - { offset: 0x88C46, size: 0x8, addend: 0x0, symName: '_$s19SwiftProtobufPluginAAV0C5ErrorO11descriptionSSvg', symObjAddr: 0x0, symBinAddr: 0x100000F70, symSize: 0x3C0 }
-  - { offset: 0x88C6A, size: 0x8, addend: 0x0, symName: '_$s19SwiftProtobufPluginAAV21configurationFileNameSSvpZ', symObjAddr: 0x1D520, symBinAddr: 0x100014FD0, symSize: 0x0 }
+  - { offset: 0x88C6A, size: 0x8, addend: 0x0, symName: '_$s19SwiftProtobufPluginAAV21configurationFileNameSSvpZ', symObjAddr: 0x1D510, symBinAddr: 0x100014FD0, symSize: 0x0 }
   - { offset: 0x89562, size: 0x8, addend: 0x0, symName: '_$s19SwiftProtobufPluginAAV0C5ErrorOWOc', symObjAddr: 0x3C0, symBinAddr: 0x100001330, symSize: 0xE4 }
   - { offset: 0x89576, size: 0x8, addend: 0x0, symName: '_$ss26DefaultStringInterpolationVWOh', symObjAddr: 0x4A4, symBinAddr: 0x100001414, symSize: 0x28 }
   - { offset: 0x8958A, size: 0x8, addend: 0x0, symName: '_$s13PackagePlugin6Target_pWOb', symObjAddr: 0x4CC, symBinAddr: 0x10000143C, symSize: 0x38 }

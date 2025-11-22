@@ -3,7 +3,7 @@ triple:          'arm64-apple-darwin'
 binary-path:     '/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/plugins/cache/GRPCSwiftPlugin'
 relocations:
   - { offset: 0x88C46, size: 0x8, addend: 0x0, symName: '_$s15GRPCSwiftPluginAAV0B5ErrorO11descriptionSSvg', symObjAddr: 0x0, symBinAddr: 0x100000F70, symSize: 0x448 }
-  - { offset: 0x88C6A, size: 0x8, addend: 0x0, symName: '_$s15GRPCSwiftPluginAAV21configurationFileNameSSvpZ', symObjAddr: 0x1FD80, symBinAddr: 0x100014E60, symSize: 0x0 }
+  - { offset: 0x88C6A, size: 0x8, addend: 0x0, symName: '_$s15GRPCSwiftPluginAAV21configurationFileNameSSvpZ', symObjAddr: 0x1FD70, symBinAddr: 0x100014E60, symSize: 0x0 }
   - { offset: 0x89732, size: 0x8, addend: 0x0, symName: '_$ss26DefaultStringInterpolationVWOh', symObjAddr: 0x448, symBinAddr: 0x1000013B8, symSize: 0x28 }
   - { offset: 0x89746, size: 0x8, addend: 0x0, symName: '_$s15GRPCSwiftPluginAAV13ConfigurationV10InvocationV10VisibilityOAHSYAAWl', symObjAddr: 0x7AC, symBinAddr: 0x10000171C, symSize: 0x68 }
   - { offset: 0x8975A, size: 0x8, addend: 0x0, symName: '_$s15GRPCSwiftPluginAAV13ConfigurationV10InvocationV10visibilityAF10VisibilityOSgvpfi', symObjAddr: 0xA98, symBinAddr: 0x100001A08, symSize: 0x8 }
