@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/DrawThingsKitPackageTests.build/master.swiftdeps"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/DrawThingsKitPackageTests.derived/runner.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/DrawThingsKitPackageTests.build/runner.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/DrawThingsKitPackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/DrawThingsKitPackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/DrawThingsKitPackageTests.build/runner.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/DrawThingsKitPackageTests.build/runner.dia"
+  }
+}

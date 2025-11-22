@@ -1,0 +1,26 @@
+{
+  "": {
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/TrailingElementsModule.build/master.swiftdeps"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/swift-collections/Sources/TrailingElementsModule/TrailingArray.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/TrailingElementsModule.build/TrailingArray.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/TrailingElementsModule.build/TrailingArray.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/TrailingElementsModule.build/TrailingArray~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/TrailingElementsModule.build/TrailingArray.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/TrailingElementsModule.build/TrailingArray.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/swift-collections/Sources/TrailingElementsModule/TrailingElements.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/TrailingElementsModule.build/TrailingElements.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/TrailingElementsModule.build/TrailingElements.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/TrailingElementsModule.build/TrailingElements~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/TrailingElementsModule.build/TrailingElements.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/TrailingElementsModule.build/TrailingElements.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/swift-collections/Sources/TrailingElementsModule/TrailingPadding.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/TrailingElementsModule.build/TrailingPadding.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/TrailingElementsModule.build/TrailingPadding.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/TrailingElementsModule.build/TrailingPadding~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/TrailingElementsModule.build/TrailingPadding.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/TrailingElementsModule.build/TrailingPadding.dia"
+  }
+}

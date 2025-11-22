@@ -1,0 +1,3 @@
+module StructuredFieldValues {
+    header "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/StructuredFieldValues.build/include/StructuredFieldValues-Swift.h"
+}

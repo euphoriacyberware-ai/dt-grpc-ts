@@ -1,0 +1,3 @@
+module _NIOConcurrency {
+    header "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/_NIOConcurrency.build/include/_NIOConcurrency-Swift.h"
+}

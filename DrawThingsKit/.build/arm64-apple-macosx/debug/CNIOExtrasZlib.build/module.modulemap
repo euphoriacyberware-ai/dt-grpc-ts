@@ -1,0 +1,4 @@
+module CNIOExtrasZlib {
+    umbrella header "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/swift-nio-extras/Sources/CNIOExtrasZlib/include/CNIOExtrasZlib.h"
+    export *
+}

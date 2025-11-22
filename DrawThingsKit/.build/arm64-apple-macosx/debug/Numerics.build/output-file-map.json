@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/Numerics.build/master.swiftdeps"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/swift-numerics/Sources/Numerics/Numerics.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/Numerics.build/Numerics.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/Numerics.build/Numerics.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/Numerics.build/Numerics~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/Numerics.build/Numerics.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/Numerics.build/Numerics.dia"
+  }
+}

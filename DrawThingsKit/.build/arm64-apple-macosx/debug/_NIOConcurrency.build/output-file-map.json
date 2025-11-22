@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/_NIOConcurrency.build/master.swiftdeps"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/swift-nio/Sources/_NIOConcurrency/Empty.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/_NIOConcurrency.build/Empty.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/_NIOConcurrency.build/Empty.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/_NIOConcurrency.build/Empty~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/_NIOConcurrency.build/Empty.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/_NIOConcurrency.build/Empty.dia"
+  }
+}

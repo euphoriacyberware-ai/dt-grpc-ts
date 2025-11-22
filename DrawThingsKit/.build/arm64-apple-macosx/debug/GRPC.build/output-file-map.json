@@ -1,0 +1,1006 @@
+{
+  "": {
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/master.swiftdeps"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/Array+BoundsCheck.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Array+BoundsCheck.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Array+BoundsCheck.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Array+BoundsCheck~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Array+BoundsCheck.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Array+BoundsCheck.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/AsyncAwaitSupport/AsyncServerHandler/ServerHandlerStateMachine/ServerHandlerStateMachine+Actions.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine+Actions.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine+Actions.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine+Actions~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine+Actions.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine+Actions.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/AsyncAwaitSupport/AsyncServerHandler/ServerHandlerStateMachine/ServerHandlerStateMachine+Draining.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine+Draining.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine+Draining.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine+Draining~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine+Draining.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine+Draining.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/AsyncAwaitSupport/AsyncServerHandler/ServerHandlerStateMachine/ServerHandlerStateMachine+Finished.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine+Finished.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine+Finished.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine+Finished~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine+Finished.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine+Finished.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/AsyncAwaitSupport/AsyncServerHandler/ServerHandlerStateMachine/ServerHandlerStateMachine+Handling.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine+Handling.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine+Handling.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine+Handling~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine+Handling.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine+Handling.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/AsyncAwaitSupport/AsyncServerHandler/ServerHandlerStateMachine/ServerHandlerStateMachine+Idle.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine+Idle.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine+Idle.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine+Idle~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine+Idle.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine+Idle.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/AsyncAwaitSupport/AsyncServerHandler/ServerHandlerStateMachine/ServerHandlerStateMachine.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerStateMachine.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/AsyncAwaitSupport/AsyncServerHandler/ServerInterceptorStateMachine/ServerInterceptorStateMachine+Actions.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorStateMachine+Actions.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorStateMachine+Actions.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorStateMachine+Actions~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorStateMachine+Actions.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorStateMachine+Actions.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/AsyncAwaitSupport/AsyncServerHandler/ServerInterceptorStateMachine/ServerInterceptorStateMachine+Finished.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorStateMachine+Finished.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorStateMachine+Finished.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorStateMachine+Finished~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorStateMachine+Finished.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorStateMachine+Finished.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/AsyncAwaitSupport/AsyncServerHandler/ServerInterceptorStateMachine/ServerInterceptorStateMachine+Intercepting.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorStateMachine+Intercepting.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorStateMachine+Intercepting.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorStateMachine+Intercepting~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorStateMachine+Intercepting.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorStateMachine+Intercepting.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/AsyncAwaitSupport/AsyncServerHandler/ServerInterceptorStateMachine/ServerInterceptorStateMachine.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorStateMachine.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorStateMachine.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorStateMachine~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorStateMachine.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorStateMachine.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/AsyncAwaitSupport/AsyncServerHandler/ServerInterceptorStateMachine/StreamState.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/StreamState.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/StreamState.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/StreamState~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/StreamState.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/StreamState.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/AsyncAwaitSupport/Call+AsyncRequestStreamWriter.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Call+AsyncRequestStreamWriter.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Call+AsyncRequestStreamWriter.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Call+AsyncRequestStreamWriter~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Call+AsyncRequestStreamWriter.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Call+AsyncRequestStreamWriter.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/AsyncAwaitSupport/CancellationError+GRPCStatusTransformable.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/CancellationError+GRPCStatusTransformable.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/CancellationError+GRPCStatusTransformable.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/CancellationError+GRPCStatusTransformable~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/CancellationError+GRPCStatusTransformable.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/CancellationError+GRPCStatusTransformable.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/AsyncAwaitSupport/GRPCAsyncBidirectionalStreamingCall.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncBidirectionalStreamingCall.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncBidirectionalStreamingCall.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncBidirectionalStreamingCall~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncBidirectionalStreamingCall.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncBidirectionalStreamingCall.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/AsyncAwaitSupport/GRPCAsyncClientStreamingCall.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncClientStreamingCall.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncClientStreamingCall.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncClientStreamingCall~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncClientStreamingCall.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncClientStreamingCall.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/AsyncAwaitSupport/GRPCAsyncRequestStream.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncRequestStream.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncRequestStream.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncRequestStream~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncRequestStream.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncRequestStream.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/AsyncAwaitSupport/GRPCAsyncRequestStreamWriter.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncRequestStreamWriter.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncRequestStreamWriter.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncRequestStreamWriter~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncRequestStreamWriter.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncRequestStreamWriter.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/AsyncAwaitSupport/GRPCAsyncResponseStream.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncResponseStream.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncResponseStream.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncResponseStream~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncResponseStream.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncResponseStream.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/AsyncAwaitSupport/GRPCAsyncResponseStreamWriter.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncResponseStreamWriter.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncResponseStreamWriter.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncResponseStreamWriter~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncResponseStreamWriter.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncResponseStreamWriter.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/AsyncAwaitSupport/GRPCAsyncSequenceProducerDelegate.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncSequenceProducerDelegate.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncSequenceProducerDelegate.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncSequenceProducerDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncSequenceProducerDelegate.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncSequenceProducerDelegate.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/AsyncAwaitSupport/GRPCAsyncServerCallContext.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncServerCallContext.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncServerCallContext.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncServerCallContext~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncServerCallContext.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncServerCallContext.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/AsyncAwaitSupport/GRPCAsyncServerHandler.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncServerHandler.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncServerHandler.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncServerHandler~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncServerHandler.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncServerHandler.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/AsyncAwaitSupport/GRPCAsyncServerStreamingCall.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncServerStreamingCall.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncServerStreamingCall.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncServerStreamingCall~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncServerStreamingCall.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncServerStreamingCall.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/AsyncAwaitSupport/GRPCAsyncUnaryCall.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncUnaryCall.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncUnaryCall.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncUnaryCall~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncUnaryCall.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncUnaryCall.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/AsyncAwaitSupport/GRPCAsyncWriterSinkDelegate.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncWriterSinkDelegate.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncWriterSinkDelegate.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncWriterSinkDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncWriterSinkDelegate.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCAsyncWriterSinkDelegate.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/AsyncAwaitSupport/GRPCChannel+AsyncAwaitSupport.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCChannel+AsyncAwaitSupport.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCChannel+AsyncAwaitSupport.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCChannel+AsyncAwaitSupport~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCChannel+AsyncAwaitSupport.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCChannel+AsyncAwaitSupport.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/AsyncAwaitSupport/GRPCClient+AsyncAwaitSupport.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCClient+AsyncAwaitSupport.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCClient+AsyncAwaitSupport.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCClient+AsyncAwaitSupport~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCClient+AsyncAwaitSupport.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCClient+AsyncAwaitSupport.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/AsyncAwaitSupport/GRPCSendable.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCSendable.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCSendable.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCSendable~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCSendable.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCSendable.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/AsyncAwaitSupport/NIOAsyncWrappers.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/NIOAsyncWrappers.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/NIOAsyncWrappers.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/NIOAsyncWrappers~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/NIOAsyncWrappers.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/NIOAsyncWrappers.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/CallHandlers/BidirectionalStreamingServerHandler.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/BidirectionalStreamingServerHandler.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/BidirectionalStreamingServerHandler.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/BidirectionalStreamingServerHandler~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/BidirectionalStreamingServerHandler.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/BidirectionalStreamingServerHandler.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/CallHandlers/ClientStreamingServerHandler.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientStreamingServerHandler.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientStreamingServerHandler.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientStreamingServerHandler~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientStreamingServerHandler.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientStreamingServerHandler.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/CallHandlers/ServerHandlerProtocol.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerProtocol.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerProtocol.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerProtocol~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerProtocol.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerHandlerProtocol.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/CallHandlers/ServerStreamingServerHandler.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerStreamingServerHandler.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerStreamingServerHandler.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerStreamingServerHandler~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerStreamingServerHandler.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerStreamingServerHandler.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/CallHandlers/UnaryServerHandler.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/UnaryServerHandler.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/UnaryServerHandler.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/UnaryServerHandler~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/UnaryServerHandler.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/UnaryServerHandler.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/CallOptions.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/CallOptions.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/CallOptions.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/CallOptions~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/CallOptions.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/CallOptions.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ClientCalls/BidirectionalStreamingCall.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/BidirectionalStreamingCall.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/BidirectionalStreamingCall.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/BidirectionalStreamingCall~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/BidirectionalStreamingCall.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/BidirectionalStreamingCall.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ClientCalls/Call.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Call.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Call.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Call~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Call.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Call.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ClientCalls/CallDetails.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/CallDetails.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/CallDetails.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/CallDetails~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/CallDetails.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/CallDetails.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ClientCalls/ClientCall.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientCall.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientCall.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientCall~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientCall.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientCall.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ClientCalls/ClientStreamingCall.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientStreamingCall.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientStreamingCall.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientStreamingCall~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientStreamingCall.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientStreamingCall.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ClientCalls/LazyEventLoopPromise.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/LazyEventLoopPromise.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/LazyEventLoopPromise.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/LazyEventLoopPromise~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/LazyEventLoopPromise.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/LazyEventLoopPromise.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ClientCalls/ResponseContainers.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ResponseContainers.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ResponseContainers.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ResponseContainers~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ResponseContainers.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ResponseContainers.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ClientCalls/ResponsePartContainer.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ResponsePartContainer.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ResponsePartContainer.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ResponsePartContainer~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ResponsePartContainer.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ResponsePartContainer.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ClientCalls/ServerStreamingCall.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerStreamingCall.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerStreamingCall.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerStreamingCall~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerStreamingCall.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerStreamingCall.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ClientCalls/UnaryCall.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/UnaryCall.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/UnaryCall.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/UnaryCall~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/UnaryCall.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/UnaryCall.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ClientConnection.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientConnection.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientConnection.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientConnection~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientConnection.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientConnection.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ClientConnectionConfiguration+NIOSSL.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientConnectionConfiguration+NIOSSL.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientConnectionConfiguration+NIOSSL.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientConnectionConfiguration+NIOSSL~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientConnectionConfiguration+NIOSSL.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientConnectionConfiguration+NIOSSL.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ClientErrorDelegate.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientErrorDelegate.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientErrorDelegate.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientErrorDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientErrorDelegate.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientErrorDelegate.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/CoalescingLengthPrefixedMessageWriter.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/CoalescingLengthPrefixedMessageWriter.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/CoalescingLengthPrefixedMessageWriter.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/CoalescingLengthPrefixedMessageWriter~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/CoalescingLengthPrefixedMessageWriter.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/CoalescingLengthPrefixedMessageWriter.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/Compression/CompressionAlgorithm.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/CompressionAlgorithm.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/CompressionAlgorithm.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/CompressionAlgorithm~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/CompressionAlgorithm.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/CompressionAlgorithm.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/Compression/DecompressionLimit.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/DecompressionLimit.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/DecompressionLimit.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/DecompressionLimit~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/DecompressionLimit.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/DecompressionLimit.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/Compression/MessageEncoding.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/MessageEncoding.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/MessageEncoding.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/MessageEncoding~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/MessageEncoding.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/MessageEncoding.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/Compression/Zlib.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Zlib.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Zlib.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Zlib~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Zlib.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Zlib.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ConnectionBackoff.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionBackoff.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionBackoff.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionBackoff~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionBackoff.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionBackoff.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ConnectionKeepalive.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionKeepalive.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionKeepalive.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionKeepalive~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionKeepalive.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionKeepalive.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ConnectionManager+Delegates.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionManager+Delegates.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionManager+Delegates.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionManager+Delegates~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionManager+Delegates.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionManager+Delegates.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ConnectionManager.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionManager.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionManager.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionManager.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionManager.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ConnectionManagerChannelProvider.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionManagerChannelProvider.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionManagerChannelProvider.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionManagerChannelProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionManagerChannelProvider.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionManagerChannelProvider.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ConnectionPool/ConnectionManagerID.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionManagerID.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionManagerID.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionManagerID~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionManagerID.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionManagerID.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ConnectionPool/ConnectionPool+PerConnectionState.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionPool+PerConnectionState.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionPool+PerConnectionState.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionPool+PerConnectionState~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionPool+PerConnectionState.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionPool+PerConnectionState.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ConnectionPool/ConnectionPool+Waiter.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionPool+Waiter.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionPool+Waiter.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionPool+Waiter~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionPool+Waiter.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionPool+Waiter.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ConnectionPool/ConnectionPool.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionPool.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionPool.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionPool~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionPool.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionPool.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ConnectionPool/ConnectionPoolIDs.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionPoolIDs.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionPoolIDs.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionPoolIDs~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionPoolIDs.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectionPoolIDs.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ConnectionPool/GRPCChannelPool.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCChannelPool.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCChannelPool.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCChannelPool~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCChannelPool.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCChannelPool.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ConnectionPool/PoolManager.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/PoolManager.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/PoolManager.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/PoolManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/PoolManager.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/PoolManager.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ConnectionPool/PoolManagerStateMachine+PerPoolState.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/PoolManagerStateMachine+PerPoolState.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/PoolManagerStateMachine+PerPoolState.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/PoolManagerStateMachine+PerPoolState~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/PoolManagerStateMachine+PerPoolState.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/PoolManagerStateMachine+PerPoolState.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ConnectionPool/PoolManagerStateMachine.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/PoolManagerStateMachine.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/PoolManagerStateMachine.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/PoolManagerStateMachine~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/PoolManagerStateMachine.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/PoolManagerStateMachine.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ConnectionPool/PooledChannel.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/PooledChannel.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/PooledChannel.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/PooledChannel~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/PooledChannel.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/PooledChannel.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ConnectionPool/StreamLender.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/StreamLender.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/StreamLender.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/StreamLender~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/StreamLender.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/StreamLender.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ConnectivityState.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectivityState.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectivityState.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectivityState~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectivityState.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ConnectivityState.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/DebugOnly.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/DebugOnly.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/DebugOnly.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/DebugOnly~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/DebugOnly.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/DebugOnly.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/DelegatingErrorHandler.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/DelegatingErrorHandler.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/DelegatingErrorHandler.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/DelegatingErrorHandler~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/DelegatingErrorHandler.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/DelegatingErrorHandler.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/Error+NIOSSL.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Error+NIOSSL.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Error+NIOSSL.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Error+NIOSSL~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Error+NIOSSL.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Error+NIOSSL.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/EventLoopFuture+RecoverFromUncleanShutdown.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/EventLoopFuture+RecoverFromUncleanShutdown.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/EventLoopFuture+RecoverFromUncleanShutdown.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/EventLoopFuture+RecoverFromUncleanShutdown~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/EventLoopFuture+RecoverFromUncleanShutdown.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/EventLoopFuture+RecoverFromUncleanShutdown.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/FakeChannel.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/FakeChannel.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/FakeChannel.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/FakeChannel~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/FakeChannel.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/FakeChannel.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/GRPCChannel/ClientConnection+NIOSSL.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientConnection+NIOSSL.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientConnection+NIOSSL.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientConnection+NIOSSL~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientConnection+NIOSSL.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientConnection+NIOSSL.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/GRPCChannel/ClientConnection+NWTLS.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientConnection+NWTLS.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientConnection+NWTLS.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientConnection+NWTLS~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientConnection+NWTLS.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientConnection+NWTLS.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/GRPCChannel/GRPCChannel.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCChannel.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCChannel.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCChannel~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCChannel.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCChannel.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/GRPCChannel/GRPCChannelBuilder.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCChannelBuilder.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCChannelBuilder.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCChannelBuilder~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCChannelBuilder.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCChannelBuilder.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/GRPCClient.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCClient.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCClient.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCClient~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCClient.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCClient.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/GRPCClientChannelHandler.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCClientChannelHandler.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCClientChannelHandler.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCClientChannelHandler~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCClientChannelHandler.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCClientChannelHandler.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/GRPCClientStateMachine.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCClientStateMachine.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCClientStateMachine.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCClientStateMachine~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCClientStateMachine.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCClientStateMachine.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/GRPCContentType.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCContentType.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCContentType.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCContentType~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCContentType.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCContentType.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/GRPCError.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCError.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCError.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCError~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCError.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCError.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/GRPCHeaderName.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCHeaderName.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCHeaderName.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCHeaderName~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCHeaderName.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCHeaderName.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/GRPCIdleHandler.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCIdleHandler.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCIdleHandler.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCIdleHandler~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCIdleHandler.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCIdleHandler.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/GRPCIdleHandlerStateMachine.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCIdleHandlerStateMachine.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCIdleHandlerStateMachine.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCIdleHandlerStateMachine~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCIdleHandlerStateMachine.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCIdleHandlerStateMachine.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/GRPCKeepaliveHandlers.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCKeepaliveHandlers.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCKeepaliveHandlers.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCKeepaliveHandlers~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCKeepaliveHandlers.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCKeepaliveHandlers.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/GRPCPayload.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCPayload.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCPayload.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCPayload~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCPayload.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCPayload.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/GRPCServerPipelineConfigurator.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCServerPipelineConfigurator.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCServerPipelineConfigurator.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCServerPipelineConfigurator~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCServerPipelineConfigurator.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCServerPipelineConfigurator.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/GRPCServerRequestRoutingHandler.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCServerRequestRoutingHandler.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCServerRequestRoutingHandler.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCServerRequestRoutingHandler~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCServerRequestRoutingHandler.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCServerRequestRoutingHandler.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/GRPCServiceDescription.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCServiceDescription.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCServiceDescription.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCServiceDescription~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCServiceDescription.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCServiceDescription.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/GRPCStatus.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCStatus.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCStatus.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCStatus~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCStatus.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCStatus.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/GRPCStatusAndMetadata.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCStatusAndMetadata.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCStatusAndMetadata.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCStatusAndMetadata~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCStatusAndMetadata.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCStatusAndMetadata.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/GRPCStatusMessageMarshaller.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCStatusMessageMarshaller.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCStatusMessageMarshaller.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCStatusMessageMarshaller~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCStatusMessageMarshaller.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCStatusMessageMarshaller.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/GRPCTLSConfiguration.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCTLSConfiguration.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCTLSConfiguration.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCTLSConfiguration~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCTLSConfiguration.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCTLSConfiguration.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/GRPCTimeout.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCTimeout.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCTimeout.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCTimeout~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCTimeout.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCTimeout.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/GRPCWebToHTTP2ServerCodec.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCWebToHTTP2ServerCodec.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCWebToHTTP2ServerCodec.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCWebToHTTP2ServerCodec~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCWebToHTTP2ServerCodec.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/GRPCWebToHTTP2ServerCodec.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/HTTP2ToRawGRPCServerCodec.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/HTTP2ToRawGRPCServerCodec.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/HTTP2ToRawGRPCServerCodec.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/HTTP2ToRawGRPCServerCodec~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/HTTP2ToRawGRPCServerCodec.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/HTTP2ToRawGRPCServerCodec.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/HTTP2ToRawGRPCStateMachine.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/HTTP2ToRawGRPCStateMachine.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/HTTP2ToRawGRPCStateMachine.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/HTTP2ToRawGRPCStateMachine~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/HTTP2ToRawGRPCStateMachine.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/HTTP2ToRawGRPCStateMachine.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/Interceptor/ClientInterceptorContext.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientInterceptorContext.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientInterceptorContext.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientInterceptorContext~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientInterceptorContext.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientInterceptorContext.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/Interceptor/ClientInterceptorPipeline.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientInterceptorPipeline.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientInterceptorPipeline.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientInterceptorPipeline~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientInterceptorPipeline.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientInterceptorPipeline.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/Interceptor/ClientInterceptorProtocol.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientInterceptorProtocol.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientInterceptorProtocol.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientInterceptorProtocol~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientInterceptorProtocol.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientInterceptorProtocol.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/Interceptor/ClientInterceptors.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientInterceptors.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientInterceptors.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientInterceptors~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientInterceptors.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientInterceptors.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/Interceptor/ClientTransport.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientTransport.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientTransport.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientTransport~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientTransport.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientTransport.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/Interceptor/ClientTransportFactory.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientTransportFactory.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientTransportFactory.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientTransportFactory~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientTransportFactory.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ClientTransportFactory.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/Interceptor/MessageParts.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/MessageParts.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/MessageParts.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/MessageParts~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/MessageParts.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/MessageParts.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/Interceptor/ServerInterceptorContext.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorContext.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorContext.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorContext~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorContext.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorContext.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/Interceptor/ServerInterceptorPipeline.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorPipeline.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorPipeline.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorPipeline~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorPipeline.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptorPipeline.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/Interceptor/ServerInterceptors.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptors.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptors.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptors~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptors.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerInterceptors.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/InterceptorContextList.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/InterceptorContextList.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/InterceptorContextList.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/InterceptorContextList~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/InterceptorContextList.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/InterceptorContextList.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/LengthPrefixedMessageReader.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/LengthPrefixedMessageReader.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/LengthPrefixedMessageReader.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/LengthPrefixedMessageReader~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/LengthPrefixedMessageReader.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/LengthPrefixedMessageReader.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/Logger.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Logger.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Logger.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Logger~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Logger.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Logger.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/LoggingServerErrorDelegate.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/LoggingServerErrorDelegate.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/LoggingServerErrorDelegate.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/LoggingServerErrorDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/LoggingServerErrorDelegate.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/LoggingServerErrorDelegate.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/MessageEncodingHeaderValidator.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/MessageEncodingHeaderValidator.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/MessageEncodingHeaderValidator.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/MessageEncodingHeaderValidator~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/MessageEncodingHeaderValidator.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/MessageEncodingHeaderValidator.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/PlatformSupport.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/PlatformSupport.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/PlatformSupport.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/PlatformSupport~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/PlatformSupport.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/PlatformSupport.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ReadWriteStates.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ReadWriteStates.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ReadWriteStates.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ReadWriteStates~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ReadWriteStates.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ReadWriteStates.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/Ref.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Ref.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Ref.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Ref~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Ref.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Ref.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/Serialization.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Serialization.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Serialization.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Serialization~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Serialization.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Serialization.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/Server+NIOSSL.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Server+NIOSSL.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Server+NIOSSL.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Server+NIOSSL~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Server+NIOSSL.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Server+NIOSSL.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/Server.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Server.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Server.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Server~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Server.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Server.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ServerBuilder+NIOSSL.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerBuilder+NIOSSL.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerBuilder+NIOSSL.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerBuilder+NIOSSL~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerBuilder+NIOSSL.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerBuilder+NIOSSL.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ServerBuilder.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerBuilder.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerBuilder.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerBuilder~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerBuilder.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerBuilder.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ServerCallContexts/ServerCallContext.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerCallContext.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerCallContext.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerCallContext~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerCallContext.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerCallContext.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ServerCallContexts/StreamingResponseCallContext.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/StreamingResponseCallContext.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/StreamingResponseCallContext.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/StreamingResponseCallContext~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/StreamingResponseCallContext.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/StreamingResponseCallContext.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ServerCallContexts/UnaryResponseCallContext.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/UnaryResponseCallContext.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/UnaryResponseCallContext.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/UnaryResponseCallContext~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/UnaryResponseCallContext.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/UnaryResponseCallContext.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ServerChannelErrorHandler.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerChannelErrorHandler.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerChannelErrorHandler.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerChannelErrorHandler~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerChannelErrorHandler.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerChannelErrorHandler.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ServerErrorDelegate.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerErrorDelegate.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerErrorDelegate.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerErrorDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerErrorDelegate.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerErrorDelegate.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/ServerErrorProcessor.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerErrorProcessor.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerErrorProcessor.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerErrorProcessor~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerErrorProcessor.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/ServerErrorProcessor.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/Stopwatch.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Stopwatch.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Stopwatch.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Stopwatch~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Stopwatch.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Stopwatch.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/StreamEvent.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/StreamEvent.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/StreamEvent.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/StreamEvent~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/StreamEvent.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/StreamEvent.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/TLSVerificationHandler.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/TLSVerificationHandler.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/TLSVerificationHandler.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/TLSVerificationHandler~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/TLSVerificationHandler.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/TLSVerificationHandler.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/TLSVersion.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/TLSVersion.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/TLSVersion.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/TLSVersion~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/TLSVersion.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/TLSVersion.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/TimeLimit.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/TimeLimit.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/TimeLimit.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/TimeLimit~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/TimeLimit.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/TimeLimit.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/UserInfo.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/UserInfo.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/UserInfo.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/UserInfo~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/UserInfo.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/UserInfo.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/Version.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Version.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Version.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Version~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Version.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/Version.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/WebCORSHandler.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/WebCORSHandler.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/WebCORSHandler.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/WebCORSHandler~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/WebCORSHandler.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/WebCORSHandler.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/WriteCapturingHandler.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/WriteCapturingHandler.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/WriteCapturingHandler.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/WriteCapturingHandler~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/WriteCapturingHandler.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/WriteCapturingHandler.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/_EmbeddedThroughput.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/_EmbeddedThroughput.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/_EmbeddedThroughput.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/_EmbeddedThroughput~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/_EmbeddedThroughput.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/_EmbeddedThroughput.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/_FakeResponseStream.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/_FakeResponseStream.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/_FakeResponseStream.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/_FakeResponseStream~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/_FakeResponseStream.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/_FakeResponseStream.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/_GRPCClientCodecHandler.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/_GRPCClientCodecHandler.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/_GRPCClientCodecHandler.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/_GRPCClientCodecHandler~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/_GRPCClientCodecHandler.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/_GRPCClientCodecHandler.dia"
+  },
+  "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/grpc-swift/Sources/GRPC/_MessageContext.swift": {
+    "dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/_MessageContext.d",
+    "object": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/_MessageContext.swift.o",
+    "swiftmodule": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/_MessageContext~partial.swiftmodule",
+    "swift-dependencies": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/_MessageContext.swiftdeps",
+    "diagnostics": "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/_MessageContext.dia"
+  }
+}

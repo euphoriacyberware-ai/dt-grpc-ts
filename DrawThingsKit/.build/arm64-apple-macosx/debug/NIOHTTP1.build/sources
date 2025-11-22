@@ -1,0 +1,17 @@
+/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/swift-nio/Sources/NIOHTTP1/ByteCollectionUtils.swift
+/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/swift-nio/Sources/NIOHTTP1/HTTPDecoder.swift
+/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/swift-nio/Sources/NIOHTTP1/HTTPEncoder.swift
+/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/swift-nio/Sources/NIOHTTP1/HTTPHeaderValidator.swift
+/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/swift-nio/Sources/NIOHTTP1/HTTPHeaders+Validation.swift
+/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/swift-nio/Sources/NIOHTTP1/HTTPPipelineSetup.swift
+/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/swift-nio/Sources/NIOHTTP1/HTTPServerPipelineHandler.swift
+/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/swift-nio/Sources/NIOHTTP1/HTTPServerProtocolErrorHandler.swift
+/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/swift-nio/Sources/NIOHTTP1/HTTPServerUpgradeHandler.swift
+/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/swift-nio/Sources/NIOHTTP1/HTTPTypedPipelineSetup.swift
+/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/swift-nio/Sources/NIOHTTP1/HTTPTypes.swift
+/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/swift-nio/Sources/NIOHTTP1/NIOHTTPClientUpgradeHandler.swift
+/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/swift-nio/Sources/NIOHTTP1/NIOHTTPObjectAggregator.swift
+/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/swift-nio/Sources/NIOHTTP1/NIOTypedHTTPClientUpgradeHandler.swift
+/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/swift-nio/Sources/NIOHTTP1/NIOTypedHTTPClientUpgraderStateMachine.swift
+/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/swift-nio/Sources/NIOHTTP1/NIOTypedHTTPServerUpgradeHandler.swift
+/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/checkouts/swift-nio/Sources/NIOHTTP1/NIOTypedHTTPServerUpgraderStateMachine.swift

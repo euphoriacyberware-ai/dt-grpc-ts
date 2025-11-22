@@ -1,0 +1,3 @@
+module NIO {
+    header "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/NIO.build/include/NIO-Swift.h"
+}

@@ -1,0 +1,3 @@
+module GRPC {
+    header "/Users/brian.cantin/Documents/GitHub/dt-grpc-ts/DrawThingsKit/.build/arm64-apple-macosx/debug/GRPC.build/include/GRPC-Swift.h"
+}
