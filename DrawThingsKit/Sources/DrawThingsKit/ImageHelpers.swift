@@ -422,9 +422,36 @@ public struct ImageHelpers {
         return false  // All pixels are opaque
     }
 
-    /// Creates a binary mask from an image's alpha channel as DTTensor format
+    /// Creates an inpainting mask from an image's alpha channel
     /// - Parameter image: The source image with alpha channel
-    /// - Returns: 3-channel DTTensor mask data where transparent pixels = white (1.0) = inpaint area, opaque pixels = black (0.0) = preserve area
+    /// - Returns: Mask data in Draw Things format: header (9x Int32) + UInt8 mask values
+    ///   - Mask values: 0 = retain/preserve, 2 = inpaint with config strength
+    /// Fill transparent areas of an image with a neutral gray color
+    /// This is useful for inpainting - transparent areas become gray which gives the
+    /// inpainting algorithm something to work from
+    public static func fillTransparentAreas(_ image: NSImage, fillColor: NSColor = NSColor(white: 0.5, alpha: 1.0)) -> NSImage {
+        guard let tiffData = image.tiffRepresentation,
+              let bitmap = NSBitmapImageRep(data: tiffData) else {
+            return image
+        }
+
+        // Create a new image with filled transparent areas
+        let size = image.size
+        let filled = NSImage(size: size)
+        filled.lockFocus()
+
+        // Fill with the fill color
+        fillColor.setFill()
+        NSRect(origin: .zero, size: size).fill()
+
+        // Draw the original image on top (opaque areas will cover, transparent won't)
+        image.draw(in: NSRect(origin: .zero, size: size))
+
+        filled.unlockFocus()
+
+        return filled
+    }
+
     public static func createMaskFromAlpha(_ image: NSImage) throws -> Data {
         guard let tiffData = image.tiffRepresentation,
               let bitmap = NSBitmapImageRep(data: tiffData),
@@ -432,32 +459,73 @@ public struct ImageHelpers {
             throw ImageError.invalidImage
         }
 
+        guard bitmap.hasAlpha else {
+            throw ImageError.invalidImage
+        }
+
         let width = bitmap.pixelsWide
         let height = bitmap.pixelsHigh
         let bytesPerRow = bitmap.bytesPerRow
+        let samplesPerPixel = bitmap.samplesPerPixel
 
-        // Create a grayscale mask image (RGB format with same value in all channels)
-        let maskImage = NSImage(size: NSSize(width: width, height: height))
-        maskImage.lockFocus()
+        // Determine alpha channel position
+        let alphaPosition: Int
+        if bitmap.bitmapFormat.contains(.alphaFirst) {
+            alphaPosition = 0  // ARGB
+        } else {
+            alphaPosition = samplesPerPixel - 1  // RGBA
+        }
 
+        // Create mask data with Draw Things header format
+        // Header: [0, 1, 1, 4096, 0, height, width, 0, 0] as Int32
+        var maskData = Data(capacity: 36 + width * height)
+
+        // Write header (9 x Int32 = 36 bytes)
+        let header: [Int32] = [0, 1, 1, 4096, 0, Int32(height), Int32(width), 0, 0]
+        for value in header {
+            var int32Value = value
+            maskData.append(Data(bytes: &int32Value, count: 4))
+        }
+
+        // Write mask data (UInt8 values)
+        // 0 = retain/preserve (opaque pixels)
+        // 2 = inpaint with config strength (transparent pixels)
         for y in 0..<height {
             for x in 0..<width {
-                let pixelIndex = y * bytesPerRow + x * 4
-                let alpha = pixelData[pixelIndex] // Alpha is first in ARGB
+                let pixelIndex = y * bytesPerRow + x * samplesPerPixel
+                let alpha = pixelData[pixelIndex + alphaPosition]
 
-                // Transparent (alpha < 255) = white (1.0) = inpaint this area
-                // Opaque (alpha = 255) = black (0.0) = preserve this area
-                let maskValue = alpha < 255 ? 1.0 : 0.0
-                NSColor(white: CGFloat(maskValue), alpha: 1.0).setFill()
-                NSRect(x: x, y: y, width: 1, height: 1).fill()
+                // Transparent (alpha < 255) = 2 (inpaint)
+                // Opaque (alpha = 255) = 0 (preserve)
+                let maskValue: UInt8 = alpha < 255 ? 2 : 0
+                maskData.append(maskValue)
             }
         }
 
-        maskImage.unlockFocus()
+        // Count transparent vs opaque pixels for debugging
+        var transparentCount = 0
+        var opaqueCount = 0
+        for y in 0..<height {
+            for x in 0..<width {
+                let pixelIndex = y * bytesPerRow + x * samplesPerPixel
+                let alpha = pixelData[pixelIndex + alphaPosition]
+                if alpha < 255 {
+                    transparentCount += 1
+                } else {
+                    opaqueCount += 1
+                }
+            }
+        }
 
-        print("🎭 Created inpainting mask from alpha channel: \(width)x\(height)")
-        // Convert mask to DTTensor format (3-channel RGB where all channels have same value)
-        return try nsImageToDTTensor(maskImage, forceRGB: true)
+        print("🎭 Created inpainting mask from alpha channel: \(width)x\(height), size: \(maskData.count) bytes")
+        print("🎭 Mask stats: \(transparentCount) transparent pixels (value 2), \(opaqueCount) opaque pixels (value 0)")
+
+        // Print first 50 bytes as hex for verification
+        let previewBytes = min(50, maskData.count)
+        let hexString = maskData.prefix(previewBytes).map { String(format: "%02x", $0) }.joined(separator: " ")
+        print("🎭 Mask header (first \(previewBytes) bytes): \(hexString)")
+
+        return maskData
     }
 
     public static func createMaskFromImage(_ image: NSImage, threshold: Float = 0.5) throws -> Data {

@@ -50,6 +50,7 @@ public struct DrawThingsConfiguration {
     public let maskBlur: Float
     public let maskBlurOutset: Int32
     public let preserveOriginalAfterInpaint: Bool
+    public let enableInpainting: Bool  // When true, adds inpaint control to enable mask-based inpainting
 
     // Quality parameters
     public let sharpness: Float
@@ -149,6 +150,7 @@ public struct DrawThingsConfiguration {
         maskBlur: Float = 1.5,
         maskBlurOutset: Int32 = 0,
         preserveOriginalAfterInpaint: Bool = true,
+        enableInpainting: Bool = false,
         sharpness: Float = 0.0,
         stochasticSamplingGamma: Float = 0.3,
         aestheticScore: Float = 6.0,
@@ -221,6 +223,7 @@ public struct DrawThingsConfiguration {
         self.maskBlur = maskBlur
         self.maskBlurOutset = maskBlurOutset
         self.preserveOriginalAfterInpaint = preserveOriginalAfterInpaint
+        self.enableInpainting = enableInpainting
         self.sharpness = sharpness
         self.stochasticSamplingGamma = stochasticSamplingGamma
         self.aestheticScore = aestheticScore
@@ -390,8 +393,24 @@ public struct DrawThingsConfiguration {
         configT.refinerStart = refinerStart
         configT.zeroNegativePrompt = zeroNegativePrompt
 
-        // Empty array for controls (will be added later)
-        configT.controls = []
+        // Add inpaint control if enabled
+        if enableInpainting {
+            let inpaintControl = ControlT()
+            inpaintControl.inputOverride = .inpaint
+            inpaintControl.weight = 1.0
+            inpaintControl.guidanceStart = 0.0
+            inpaintControl.guidanceEnd = 1.0
+            inpaintControl.noPrompt = false
+            inpaintControl.globalAveragePooling = true
+            inpaintControl.downSamplingRate = 1.0
+            inpaintControl.controlMode = .balanced
+            inpaintControl.targetBlocks = []
+            inpaintControl.file = ""  // Empty file - mask is sent separately
+            configT.controls = [inpaintControl]
+            print("🎭 Added inpaint control to configuration")
+        } else {
+            configT.controls = []
+        }
 
         // Add LoRAs
         configT.loras = loras.map { lora in
