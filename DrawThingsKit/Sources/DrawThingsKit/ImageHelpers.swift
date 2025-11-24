@@ -44,6 +44,222 @@ public struct ImageHelpers {
         return newImage
     }
     
+    /// Convert DTTensor format (from Draw Things server) to NSImage
+    /// DTTensor format:
+    /// - 68-byte header containing width, height, channels, compression flag
+    /// - Float16 RGB data (optionally compressed)
+    /// - Values in range [-1, 1] need to be converted to [0, 255]
+    public static func nsImageToDTTensor(_ image: NSImage) throws -> Data {
+        // Ensure we have RGB bitmap without alpha
+        guard let tiffData = image.tiffRepresentation,
+              var bitmap = NSBitmapImageRep(data: tiffData) else {
+            throw ImageError.invalidImage
+        }
+
+        // Convert to RGB if needed
+        if bitmap.hasAlpha || bitmap.samplesPerPixel != 3 {
+            // Create a new RGB-only bitmap
+            guard let rgbBitmap = NSBitmapImageRep(
+                bitmapDataPlanes: nil,
+                pixelsWide: bitmap.pixelsWide,
+                pixelsHigh: bitmap.pixelsHigh,
+                bitsPerSample: 8,
+                samplesPerPixel: 3,
+                hasAlpha: false,
+                isPlanar: false,
+                colorSpaceName: .deviceRGB,
+                bytesPerRow: bitmap.pixelsWide * 3,
+                bitsPerPixel: 24
+            ) else {
+                throw ImageError.conversionFailed
+            }
+
+            // Draw the original image into the RGB bitmap
+            NSGraphicsContext.saveGraphicsState()
+            NSGraphicsContext.current = NSGraphicsContext(bitmapImageRep: rgbBitmap)
+            image.draw(in: NSRect(x: 0, y: 0, width: bitmap.pixelsWide, height: bitmap.pixelsHigh))
+            NSGraphicsContext.restoreGraphicsState()
+
+            bitmap = rgbBitmap
+        }
+
+        let width = bitmap.pixelsWide
+        let height = bitmap.pixelsHigh
+        let channels = 3  // RGB
+
+        print("🖼️ Converting image: \(width)x\(height), \(bitmap.samplesPerPixel) samples, bytesPerRow: \(bitmap.bytesPerRow)")
+
+        // DTTensor format constants (from ccv_nnc)
+        let CCV_TENSOR_CPU_MEMORY: UInt32 = 0x1
+        let CCV_TENSOR_FORMAT_NHWC: UInt32 = 0x02
+        let CCV_16F: UInt32 = 0x20000
+
+        // Create header (17 uint32 values = 68 bytes, but we only use first 9)
+        // Based on: struct.pack_into("<9I", image_bytes, 0, 0, CCV_TENSOR_CPU_MEMORY, CCV_TENSOR_FORMAT_NHWC, CCV_16F, 0, 1, height, width, channels)
+        var header = [UInt32](repeating: 0, count: 17)
+        header[0] = 0  // No compression (fpzip compression flag would be 1012247)
+        header[1] = CCV_TENSOR_CPU_MEMORY
+        header[2] = CCV_TENSOR_FORMAT_NHWC
+        header[3] = CCV_16F
+        header[4] = 0  // reserved
+        header[5] = 1  // N dimension (batch size)
+        header[6] = UInt32(height)  // H dimension
+        header[7] = UInt32(width)   // W dimension
+        header[8] = UInt32(channels) // C dimension
+
+        var tensorData = Data(count: 68 + width * height * channels * 2)
+
+        // Write header
+        tensorData.withUnsafeMutableBytes { (ptr: UnsafeMutableRawBufferPointer) in
+            let uint32Ptr = ptr.baseAddress!.assumingMemoryBound(to: UInt32.self)
+            for i in 0..<9 {
+                uint32Ptr[i] = header[i]
+            }
+        }
+
+        // Convert bitmap to RGB float16 data in range [-1, 1]
+        guard let bitmapData = bitmap.bitmapData else {
+            throw ImageError.conversionFailed
+        }
+
+        tensorData.withUnsafeMutableBytes { (outPtr: UnsafeMutableRawBufferPointer) in
+            let float16Ptr = outPtr.baseAddress!.advanced(by: 68).assumingMemoryBound(to: UInt16.self)
+
+            for y in 0..<height {
+                for x in 0..<width {
+                    let pixelIndex = y * width + x
+                    let bitmapIndex = y * bitmap.bytesPerRow + x * 3  // Always 3 bytes per pixel now
+
+                    for c in 0..<3 {
+                        let uint8Value = bitmapData[bitmapIndex + c]
+                        // Convert from [0, 255] to [-1, 1]: v = pixel[c] / 255 * 2 - 1
+                        let floatValue = (Float(uint8Value) / 255.0 * 2.0) - 1.0
+                        let float16Value = Float16(floatValue)
+                        float16Ptr[pixelIndex * 3 + c] = float16Value.bitPattern
+                    }
+                }
+            }
+        }
+
+        print("✅ DTTensor created: \(tensorData.count) bytes")
+        return tensorData
+    }
+
+    public static func dtTensorToNSImage(_ tensorData: Data) throws -> NSImage {
+        guard tensorData.count >= 68 else {
+            throw ImageError.invalidData
+        }
+
+        // Read header (17 uint32 values = 68 bytes)
+        let headerData = tensorData.prefix(68)
+        var header = [UInt32](repeating: 0, count: 17)
+        headerData.withUnsafeBytes { (ptr: UnsafeRawBufferPointer) in
+            let uint32Ptr = ptr.bindMemory(to: UInt32.self)
+            for i in 0..<17 {
+                header[i] = uint32Ptr[i]
+            }
+        }
+
+        // Extract metadata from header
+        let compressionFlag = header[0]
+        let height = Int(header[6])
+        let width = Int(header[7])
+        let channels = Int(header[8])
+
+        print("📊 DTTensor: \(width)x\(height), \(channels) channels, compressed: \(compressionFlag == 1012247)")
+
+        // Check for compression
+        let isCompressed = (compressionFlag == 1012247)
+
+        if isCompressed {
+            print("⚠️ Image is compressed with fpzip - decompression not yet implemented")
+            print("💡 Workaround: Disable compression in Draw Things server settings")
+            throw ImageError.compressionNotSupported
+        }
+
+        guard channels == 3 || channels == 4 else {
+            print("⚠️ Unsupported channel count: \(channels). Only RGB (3) and RGBA (4) are supported.")
+            throw ImageError.conversionFailed
+        }
+
+        // Extract Float16 data (2 bytes per value)
+        let pixelDataOffset = 68
+        let pixelCount = width * height * channels
+        let expectedDataSize = pixelDataOffset + (pixelCount * 2)
+
+        guard tensorData.count >= expectedDataSize else {
+            print("⚠️ Data size mismatch: got \(tensorData.count), expected \(expectedDataSize)")
+            throw ImageError.invalidData
+        }
+
+        // Output will always be RGB (3 channels)
+        var rgbData = Data(count: width * height * 3)
+
+        tensorData.withUnsafeBytes { (rawPtr: UnsafeRawBufferPointer) in
+            let basePtr = rawPtr.baseAddress!.advanced(by: pixelDataOffset)
+            let float16Ptr = basePtr.assumingMemoryBound(to: UInt16.self)
+
+            rgbData.withUnsafeMutableBytes { (outPtr: UnsafeMutableRawBufferPointer) in
+                let uint8Ptr = outPtr.baseAddress!.assumingMemoryBound(to: UInt8.self)
+
+                if channels == 4 {
+                    // 4-channel latent space to RGB conversion (SDXL coefficients)
+                    // Based on Draw Things ImageConverter.swift
+                    for i in 0..<(width * height) {
+                        let v0 = Float(Float16(bitPattern: float16Ptr[i * 4 + 0]))
+                        let v1 = Float(Float16(bitPattern: float16Ptr[i * 4 + 1]))
+                        let v2 = Float(Float16(bitPattern: float16Ptr[i * 4 + 2]))
+                        let v3 = Float(Float16(bitPattern: float16Ptr[i * 4 + 3]))
+
+                        let r = 47.195 * v0 - 29.114 * v1 + 11.883 * v2 - 38.063 * v3 + 141.64
+                        let g = 53.237 * v0 - 1.4623 * v1 + 12.991 * v2 - 28.043 * v3 + 127.46
+                        let b = 58.182 * v0 + 4.3734 * v1 - 3.3735 * v2 - 26.722 * v3 + 114.5
+
+                        uint8Ptr[i * 3 + 0] = UInt8(clamping: Int(r))
+                        uint8Ptr[i * 3 + 1] = UInt8(clamping: Int(g))
+                        uint8Ptr[i * 3 + 2] = UInt8(clamping: Int(b))
+                    }
+                } else {
+                    // 3-channel RGB: Convert from [-1, 1] to [0, 255]
+                    for i in 0..<pixelCount {
+                        let float16Bits = float16Ptr[i]
+                        let float16Value = Float16(bitPattern: float16Bits)
+                        let uint8Value = UInt8(clamping: Int((Float(float16Value) + 1.0) * 127.5))
+                        uint8Ptr[i] = uint8Value
+                    }
+                }
+            }
+        }
+
+        // Create NSImage from RGB data
+        guard let bitmap = NSBitmapImageRep(
+            bitmapDataPlanes: nil,
+            pixelsWide: width,
+            pixelsHigh: height,
+            bitsPerSample: 8,
+            samplesPerPixel: 3,
+            hasAlpha: false,
+            isPlanar: false,
+            colorSpaceName: .deviceRGB,
+            bytesPerRow: width * 3,
+            bitsPerPixel: 24
+        ) else {
+            throw ImageError.conversionFailed
+        }
+
+        // Copy RGB data to bitmap
+        rgbData.withUnsafeBytes { (ptr: UnsafeRawBufferPointer) in
+            if let bitmapData = bitmap.bitmapData {
+                ptr.copyBytes(to: UnsafeMutableRawBufferPointer(start: bitmapData, count: rgbData.count))
+            }
+        }
+
+        let image = NSImage(size: NSSize(width: width, height: height))
+        image.addRepresentation(bitmap)
+
+        return image
+    }
+
     public static func createMaskFromImage(_ image: NSImage, threshold: Float = 0.5) throws -> Data {
         guard let tiffData = image.tiffRepresentation,
               let bitmap = NSBitmapImageRep(data: tiffData) else {
@@ -79,7 +295,8 @@ public enum ImageError: Error, LocalizedError {
     case invalidData
     case conversionFailed
     case fileNotFound
-    
+    case compressionNotSupported
+
     public var errorDescription: String? {
         switch self {
         case .invalidImage:
@@ -90,6 +307,8 @@ public enum ImageError: Error, LocalizedError {
             return "Failed to convert image to desired format"
         case .fileNotFound:
             return "Image file not found"
+        case .compressionNotSupported:
+            return "Compressed image format not yet supported. Please disable compression in Draw Things server settings."
         }
     }
 }

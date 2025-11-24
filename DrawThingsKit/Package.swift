@@ -16,6 +16,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/grpc/grpc-swift.git", from: "1.23.0"),
         .package(url: "https://github.com/apple/swift-protobuf.git", from: "1.27.0"),
+        .package(url: "https://github.com/google/flatbuffers.git", exact: "25.9.23"),
     ],
     targets: [
         .target(
@@ -23,6 +24,7 @@ let package = Package(
             dependencies: [
                 .product(name: "GRPC", package: "grpc-swift"),
                 .product(name: "SwiftProtobuf", package: "swift-protobuf"),
+                .product(name: "FlatBuffers", package: "flatbuffers"),
             ]
         ),
         .testTarget(
