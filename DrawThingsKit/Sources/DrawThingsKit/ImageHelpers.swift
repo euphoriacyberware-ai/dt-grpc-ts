@@ -123,25 +123,34 @@ public struct ImageHelpers {
         }
 
         tensorData.withUnsafeMutableBytes { (outPtr: UnsafeMutableRawBufferPointer) in
-            let float16Ptr = outPtr.baseAddress!.advanced(by: 68).assumingMemoryBound(to: UInt16.self)
+            let pixelDataPtr = outPtr.baseAddress!.advanced(by: 68)
 
             for y in 0..<height {
                 for x in 0..<width {
-                    let pixelIndex = y * width + x
                     let bitmapIndex = y * bitmap.bytesPerRow + x * 3  // Always 3 bytes per pixel now
+                    let tensorOffset = 68 + (y * width + x) * 6  // 6 bytes per pixel (3 channels * 2 bytes)
 
                     for c in 0..<3 {
                         let uint8Value = bitmapData[bitmapIndex + c]
                         // Convert from [0, 255] to [-1, 1]: v = pixel[c] / 255 * 2 - 1
                         let floatValue = (Float(uint8Value) / 255.0 * 2.0) - 1.0
                         let float16Value = Float16(floatValue)
-                        float16Ptr[pixelIndex * 3 + c] = float16Value.bitPattern
+
+                        // Write Float16 in little-endian format (matching Python's struct.pack "<e")
+                        let bitPattern = float16Value.bitPattern
+                        let byteOffset = tensorOffset - 68 + c * 2
+                        pixelDataPtr.storeBytes(of: bitPattern.littleEndian, toByteOffset: byteOffset, as: UInt16.self)
                     }
                 }
             }
         }
 
         print("✅ DTTensor created: \(tensorData.count) bytes")
+
+        // Debug: Print first 100 bytes as hex
+        let debugBytes = tensorData.prefix(100).map { String(format: "%02x", $0) }.joined(separator: " ")
+        print("📊 First 100 bytes: \(debugBytes)")
+
         return tensorData
     }
 
