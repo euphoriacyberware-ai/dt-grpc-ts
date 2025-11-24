@@ -59,8 +59,8 @@ public struct ImageHelpers {
         let height = cgImage.height
         let channels = 3  // RGB
 
-        // Create RGBA bitmap (CG requires alpha for proper context creation)
-        let bytesPerRow = width * 4  // RGBA = 4 bytes per pixel
+        // Create BGRA bitmap (standard on macOS with premultipliedFirst)
+        let bytesPerRow = width * 4  // 4 bytes per pixel
         var pixelData = [UInt8](repeating: 0, count: height * bytesPerRow)
 
         guard let colorSpace = CGColorSpace(name: CGColorSpace.sRGB),
@@ -71,19 +71,20 @@ public struct ImageHelpers {
                 bitsPerComponent: 8,
                 bytesPerRow: bytesPerRow,
                 space: colorSpace,
-                bitmapInfo: CGImageAlphaInfo.noneSkipLast.rawValue
+                bitmapInfo: CGImageAlphaInfo.premultipliedFirst.rawValue | CGBitmapInfo.byteOrder32Big.rawValue
               ) else {
             throw ImageError.conversionFailed
         }
 
-        // Draw the image into our RGBA buffer
+        // Draw the image into our buffer
+        // CGContext with our settings already handles the coordinate system correctly
         context.draw(cgImage, in: CGRect(x: 0, y: 0, width: width, height: height))
 
-        print("🖼️ Converting image: \(width)x\(height), RGBA source")
+        print("🖼️ Converting image: \(width)x\(height), ARGB source (Big Endian)")
 
-        // Debug: Check first few RGBA pixels
-        print("🔍 First 12 RGBA bytes (3 pixels): ", terminator: "")
-        for i in 0..<min(12, pixelData.count) {
+        // Debug: Check first few pixels (ARGB format)
+        print("🔍 First 16 bytes (4 ARGB pixels): ", terminator: "")
+        for i in 0..<min(16, pixelData.count) {
             print(String(format: "%02x ", pixelData[i]), terminator: "")
         }
         print()
@@ -116,32 +117,43 @@ public struct ImageHelpers {
             }
         }
 
-        // Convert RGBA pixel data to RGB float16 tensor data in range [-1, 1]
+        // Convert ARGB pixel data to RGB float16 tensor data in range [-1, 1]
         tensorData.withUnsafeMutableBytes { (outPtr: UnsafeMutableRawBufferPointer) in
             let tensorPixelPtr = outPtr.baseAddress!.advanced(by: 68)
             var debugPixelCount = 0
 
             for y in 0..<height {
                 for x in 0..<width {
-                    let rgbaIndex = y * bytesPerRow + x * 4  // 4 bytes per pixel (RGBA)
+                    let argbIndex = y * bytesPerRow + x * 4  // 4 bytes per pixel (ARGB)
                     let tensorOffset = 68 + (y * width + x) * 6  // 6 bytes per pixel (3 channels * 2 bytes)
 
+                    // Extract RGB from ARGB (skip A at index 0, R at 1, G at 2, B at 3)
+                    let channelOffsets = [1, 2, 3]  // R, G, B indices in ARGB
                     for c in 0..<3 {
-                        let uint8Value = pixelData[rgbaIndex + c]  // Extract R, G, or B (skip A at index 3)
+                        let uint8Value = pixelData[argbIndex + channelOffsets[c]]
                         // Convert from [0, 255] to [-1, 1]: v = pixel[c] / 255 * 2 - 1
                         let floatValue = (Float(uint8Value) / 255.0 * 2.0) - 1.0
                         let float16Value = Float16(floatValue)
 
                         // Debug first pixel
                         if debugPixelCount < 3 {
-                            print("🔬 Pixel 0 channel \(c): uint8=\(uint8Value) -> float=\(floatValue) -> float16=\(float16Value)")
+                            let channelName = ["R", "G", "B"][c]
+                            let bitPattern = float16Value.bitPattern
+                            let byte0 = UInt8(bitPattern & 0xFF)
+                            let byte1 = UInt8((bitPattern >> 8) & 0xFF)
+                            print("🔬 Pixel 0 \(channelName): uint8=\(uint8Value) -> float=\(floatValue) -> float16=\(float16Value) -> bytes=[\(String(format: "%02x", byte0)) \(String(format: "%02x", byte1))]")
                             debugPixelCount += 1
                         }
 
                         // Write Float16 in little-endian format (matching Python's struct.pack "<e")
                         let bitPattern = float16Value.bitPattern
                         let byteOffset = tensorOffset - 68 + c * 2
-                        tensorPixelPtr.storeBytes(of: bitPattern.littleEndian, toByteOffset: byteOffset, as: UInt16.self)
+
+                        // Write as little-endian: low byte first, high byte second
+                        let byte0 = UInt8(bitPattern & 0xFF)
+                        let byte1 = UInt8((bitPattern >> 8) & 0xFF)
+                        tensorPixelPtr.storeBytes(of: byte0, toByteOffset: byteOffset, as: UInt8.self)
+                        tensorPixelPtr.storeBytes(of: byte1, toByteOffset: byteOffset + 1, as: UInt8.self)
                     }
                 }
             }
