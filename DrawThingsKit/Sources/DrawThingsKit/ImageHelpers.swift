@@ -70,7 +70,34 @@ public struct ImageHelpers {
         let x = (canvasSize.width - scaledSize.width) / 2
         let y = (canvasSize.height - scaledSize.height) / 2
 
-        // Create canvas image with RGBA support for transparency
+        // Check if the image fills the entire canvas (no background needed)
+        let imageFillsCanvas = abs(scaledSize.width - canvasSize.width) < 0.5 &&
+                               abs(scaledSize.height - canvasSize.height) < 0.5
+
+        print("🔍 scaleImageToCanvas: image=\(imageSize), canvas=\(canvasSize), scaled=\(scaledSize), fills=\(imageFillsCanvas)")
+
+        // If image fills canvas completely, no need to create new canvas with background
+        if imageFillsCanvas {
+            // Just resize the image if needed
+            if abs(imageSize.width - canvasSize.width) < 0.5 &&
+               abs(imageSize.height - canvasSize.height) < 0.5 {
+                // Already the right size
+                print("✅ Image already correct size, returning original")
+                return image
+            } else {
+                // Need to resize
+                print("✅ Resizing image without background")
+                let resized = NSImage(size: canvasSize)
+                resized.lockFocus()
+                image.draw(in: NSRect(origin: .zero, size: canvasSize))
+                resized.unlockFocus()
+                return resized
+            }
+        }
+
+        print("⚠️ Image needs letterboxing, adding background")
+
+        // Image doesn't fill canvas - need background
         let canvas = NSImage(size: canvasSize)
         canvas.lockFocus()
 
@@ -346,6 +373,53 @@ public struct ImageHelpers {
         image.addRepresentation(bitmap)
 
         return image
+    }
+
+    /// Check if an image has any transparent pixels
+    /// - Parameter image: The image to check
+    /// - Returns: true if any pixel has alpha < 255, false otherwise
+    public static func hasTransparency(_ image: NSImage) -> Bool {
+        guard let tiffData = image.tiffRepresentation,
+              let bitmap = NSBitmapImageRep(data: tiffData),
+              let pixelData = bitmap.bitmapData else {
+            return false
+        }
+
+        // If image doesn't have an alpha channel, it's definitely opaque
+        guard bitmap.hasAlpha else {
+            print("🔍 hasTransparency: Image has no alpha channel, returning false")
+            return false
+        }
+
+        let width = bitmap.pixelsWide
+        let height = bitmap.pixelsHigh
+        let bytesPerRow = bitmap.bytesPerRow
+        let samplesPerPixel = bitmap.samplesPerPixel
+
+        print("🔍 hasTransparency: Scanning \(width)x\(height), \(samplesPerPixel) samples/pixel, bytesPerRow=\(bytesPerRow)")
+
+        // Determine alpha channel position (usually first in ARGB or last in RGBA)
+        let alphaPosition: Int
+        if bitmap.bitmapFormat.contains(.alphaFirst) {
+            alphaPosition = 0  // ARGB
+        } else {
+            alphaPosition = samplesPerPixel - 1  // RGBA
+        }
+
+        // Check if any pixel has alpha < 255
+        for y in 0..<height {
+            for x in 0..<width {
+                let pixelIndex = y * bytesPerRow + x * samplesPerPixel
+                let alpha = pixelData[pixelIndex + alphaPosition]
+                if alpha < 255 {
+                    print("🔍 hasTransparency: Found transparent pixel at (\(x), \(y)), alpha=\(alpha)")
+                    return true  // Found transparent pixel
+                }
+            }
+        }
+
+        print("🔍 hasTransparency: All pixels are opaque")
+        return false  // All pixels are opaque
     }
 
     /// Creates a binary mask from an image's alpha channel as DTTensor format
