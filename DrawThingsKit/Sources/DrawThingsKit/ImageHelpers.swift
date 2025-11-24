@@ -43,13 +43,62 @@ public struct ImageHelpers {
         newImage.unlockFocus()
         return newImage
     }
+
+    /// Scale image to fit within canvas dimensions while preserving aspect ratio
+    /// Fills empty space with the specified background color, or leaves transparent if backgroundColor is nil
+    public static func scaleImageToCanvas(_ image: NSImage, canvasWidth: Int, canvasHeight: Int, backgroundColor: NSColor?) -> NSImage {
+        // For outpainting mode (backgroundColor is nil), we need to handle this differently
+        // Instead of transparency, use a neutral color that the model can work with
+        let canvasSize = CGSize(width: canvasWidth, height: canvasHeight)
+        let imageSize = image.size
+
+        // Calculate aspect ratios
+        let canvasAspect = CGFloat(canvasWidth) / CGFloat(canvasHeight)
+        let imageAspect = imageSize.width / imageSize.height
+
+        // Calculate scaled size that fits within canvas while preserving aspect ratio
+        var scaledSize: CGSize
+        if imageAspect > canvasAspect {
+            // Image is wider than canvas - fit to width
+            scaledSize = CGSize(width: canvasSize.width, height: canvasSize.width / imageAspect)
+        } else {
+            // Image is taller than canvas - fit to height
+            scaledSize = CGSize(width: canvasSize.height * imageAspect, height: canvasSize.height)
+        }
+
+        // Center the scaled image on the canvas
+        let x = (canvasSize.width - scaledSize.width) / 2
+        let y = (canvasSize.height - scaledSize.height) / 2
+
+        // Create canvas image with RGBA support for transparency
+        let canvas = NSImage(size: canvasSize)
+        canvas.lockFocus()
+
+        // Fill background if color is provided, otherwise leave transparent
+        if let backgroundColor = backgroundColor {
+            backgroundColor.setFill()
+            NSRect(origin: .zero, size: canvasSize).fill()
+        } else {
+            // Clear to transparent
+            NSColor.clear.setFill()
+            NSRect(origin: .zero, size: canvasSize).fill()
+        }
+
+        // Draw scaled image centered
+        image.draw(in: NSRect(x: x, y: y, width: scaledSize.width, height: scaledSize.height))
+
+        canvas.unlockFocus()
+
+        return canvas
+    }
     
     /// Convert DTTensor format (from Draw Things server) to NSImage
     /// DTTensor format:
     /// - 68-byte header containing width, height, channels, compression flag
     /// - Float16 RGB data (optionally compressed)
     /// - Values in range [-1, 1] need to be converted to [0, 255]
-    public static func nsImageToDTTensor(_ image: NSImage) throws -> Data {
+    /// - Parameter forceRGB: If true, always output 3 channels (RGB) even if image has transparency
+    public static func nsImageToDTTensor(_ image: NSImage, forceRGB: Bool = false) throws -> Data {
         // Get the bitmap representation directly without TIFF conversion
         guard let cgImage = image.cgImage(forProposedRect: nil, context: nil, hints: nil) else {
             throw ImageError.invalidImage
@@ -57,10 +106,9 @@ public struct ImageHelpers {
 
         let width = cgImage.width
         let height = cgImage.height
-        let channels = 3  // RGB
 
-        // Create BGRA bitmap (standard on macOS with premultipliedFirst)
-        let bytesPerRow = width * 4  // 4 bytes per pixel
+        // Create ARGB bitmap (standard on macOS with premultipliedFirst)
+        let bytesPerRow = width * 4  // 4 bytes per pixel (ARGB)
         var pixelData = [UInt8](repeating: 0, count: height * bytesPerRow)
 
         guard let colorSpace = CGColorSpace(name: CGColorSpace.sRGB),
@@ -80,7 +128,24 @@ public struct ImageHelpers {
         // CGContext with our settings already handles the coordinate system correctly
         context.draw(cgImage, in: CGRect(x: 0, y: 0, width: width, height: height))
 
-        print("🖼️ Converting image: \(width)x\(height), ARGB source (Big Endian)")
+        // Check if image has any transparency
+        var hasTransparency = false
+        if !forceRGB {
+            for y in 0..<height {
+                for x in 0..<width {
+                    let pixelIndex = y * bytesPerRow + x * 4
+                    let alpha = pixelData[pixelIndex] // Alpha is first in ARGB
+                    if alpha < 255 {
+                        hasTransparency = true
+                        break
+                    }
+                }
+                if hasTransparency { break }
+            }
+        }
+
+        let channels = (hasTransparency && !forceRGB) ? 4 : 3  // RGBA for transparency, RGB otherwise (unless forced)
+        print("🖼️ Converting image: \(width)x\(height), \(channels) channels, hasTransparency: \(hasTransparency), forceRGB: \(forceRGB)")
 
         // Debug: Check first few pixels (ARGB format)
         print("🔍 First 16 bytes (4 ARGB pixels): ", terminator: "")
@@ -125,19 +190,19 @@ public struct ImageHelpers {
             for y in 0..<height {
                 for x in 0..<width {
                     let argbIndex = y * bytesPerRow + x * 4  // 4 bytes per pixel (ARGB)
-                    let tensorOffset = 68 + (y * width + x) * 6  // 6 bytes per pixel (3 channels * 2 bytes)
+                    let tensorOffset = 68 + (y * width + x) * (channels * 2)  // channels * 2 bytes per pixel
 
-                    // Extract RGB from ARGB (skip A at index 0, R at 1, G at 2, B at 3)
-                    let channelOffsets = [1, 2, 3]  // R, G, B indices in ARGB
-                    for c in 0..<3 {
+                    // Extract RGB(A) from ARGB (A at index 0, R at 1, G at 2, B at 3)
+                    let channelOffsets = channels == 4 ? [1, 2, 3, 0] : [1, 2, 3]  // RGBA or RGB
+                    for c in 0..<channels {
                         let uint8Value = pixelData[argbIndex + channelOffsets[c]]
                         // Convert from [0, 255] to [-1, 1]: v = pixel[c] / 255 * 2 - 1
                         let floatValue = (Float(uint8Value) / 255.0 * 2.0) - 1.0
                         let float16Value = Float16(floatValue)
 
                         // Debug first pixel
-                        if debugPixelCount < 3 {
-                            let channelName = ["R", "G", "B"][c]
+                        if debugPixelCount < channels {
+                            let channelName = channels == 4 ? ["R", "G", "B", "A"][c] : ["R", "G", "B"][c]
                             let bitPattern = float16Value.bitPattern
                             let byte0 = UInt8(bitPattern & 0xFF)
                             let byte1 = UInt8((bitPattern >> 8) & 0xFF)
@@ -281,6 +346,44 @@ public struct ImageHelpers {
         image.addRepresentation(bitmap)
 
         return image
+    }
+
+    /// Creates a binary mask from an image's alpha channel as DTTensor format
+    /// - Parameter image: The source image with alpha channel
+    /// - Returns: 3-channel DTTensor mask data where transparent pixels = white (1.0) = inpaint area, opaque pixels = black (0.0) = preserve area
+    public static func createMaskFromAlpha(_ image: NSImage) throws -> Data {
+        guard let tiffData = image.tiffRepresentation,
+              let bitmap = NSBitmapImageRep(data: tiffData),
+              let pixelData = bitmap.bitmapData else {
+            throw ImageError.invalidImage
+        }
+
+        let width = bitmap.pixelsWide
+        let height = bitmap.pixelsHigh
+        let bytesPerRow = bitmap.bytesPerRow
+
+        // Create a grayscale mask image (RGB format with same value in all channels)
+        let maskImage = NSImage(size: NSSize(width: width, height: height))
+        maskImage.lockFocus()
+
+        for y in 0..<height {
+            for x in 0..<width {
+                let pixelIndex = y * bytesPerRow + x * 4
+                let alpha = pixelData[pixelIndex] // Alpha is first in ARGB
+
+                // Transparent (alpha < 255) = white (1.0) = inpaint this area
+                // Opaque (alpha = 255) = black (0.0) = preserve this area
+                let maskValue = alpha < 255 ? 1.0 : 0.0
+                NSColor(white: CGFloat(maskValue), alpha: 1.0).setFill()
+                NSRect(x: x, y: y, width: 1, height: 1).fill()
+            }
+        }
+
+        maskImage.unlockFocus()
+
+        print("🎭 Created inpainting mask from alpha channel: \(width)x\(height)")
+        // Convert mask to DTTensor format (3-channel RGB where all channels have same value)
+        return try nsImageToDTTensor(maskImage, forceRGB: true)
     }
 
     public static func createMaskFromImage(_ image: NSImage, threshold: Float = 0.5) throws -> Data {
