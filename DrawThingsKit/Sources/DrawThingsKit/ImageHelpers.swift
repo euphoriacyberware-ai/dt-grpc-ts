@@ -50,44 +50,54 @@ public struct ImageHelpers {
     /// - Float16 RGB data (optionally compressed)
     /// - Values in range [-1, 1] need to be converted to [0, 255]
     public static func nsImageToDTTensor(_ image: NSImage) throws -> Data {
-        // Ensure we have RGB bitmap without alpha
-        guard let tiffData = image.tiffRepresentation,
-              var bitmap = NSBitmapImageRep(data: tiffData) else {
+        // Get the bitmap representation directly without TIFF conversion
+        guard let cgImage = image.cgImage(forProposedRect: nil, context: nil, hints: nil) else {
             throw ImageError.invalidImage
         }
 
-        // Convert to RGB if needed
-        if bitmap.hasAlpha || bitmap.samplesPerPixel != 3 {
-            // Create a new RGB-only bitmap
-            guard let rgbBitmap = NSBitmapImageRep(
-                bitmapDataPlanes: nil,
-                pixelsWide: bitmap.pixelsWide,
-                pixelsHigh: bitmap.pixelsHigh,
-                bitsPerSample: 8,
-                samplesPerPixel: 3,
-                hasAlpha: false,
-                isPlanar: false,
-                colorSpaceName: .deviceRGB,
-                bytesPerRow: bitmap.pixelsWide * 3,
-                bitsPerPixel: 24
-            ) else {
-                throw ImageError.conversionFailed
-            }
+        let width = cgImage.width
+        let height = cgImage.height
 
-            // Draw the original image into the RGB bitmap
-            NSGraphicsContext.saveGraphicsState()
-            NSGraphicsContext.current = NSGraphicsContext(bitmapImageRep: rgbBitmap)
-            image.draw(in: NSRect(x: 0, y: 0, width: bitmap.pixelsWide, height: bitmap.pixelsHigh))
-            NSGraphicsContext.restoreGraphicsState()
-
-            bitmap = rgbBitmap
+        // Create RGB-only bitmap in sRGB color space
+        guard let rgbBitmap = NSBitmapImageRep(
+            bitmapDataPlanes: nil,
+            pixelsWide: width,
+            pixelsHigh: height,
+            bitsPerSample: 8,
+            samplesPerPixel: 3,
+            hasAlpha: false,
+            isPlanar: false,
+            colorSpaceName: .deviceRGB,
+            bytesPerRow: width * 3,
+            bitsPerPixel: 24
+        ) else {
+            throw ImageError.conversionFailed
         }
 
-        let width = bitmap.pixelsWide
-        let height = bitmap.pixelsHigh
+        // Draw the image into the RGB bitmap
+        NSGraphicsContext.saveGraphicsState()
+        NSGraphicsContext.current = NSGraphicsContext(bitmapImageRep: rgbBitmap)
+
+        let drawRect = NSRect(x: 0, y: 0, width: width, height: height)
+        if let context = NSGraphicsContext.current?.cgContext {
+            context.draw(cgImage, in: drawRect)
+        }
+
+        NSGraphicsContext.restoreGraphicsState()
+
+        let bitmap = rgbBitmap
         let channels = 3  // RGB
 
         print("🖼️ Converting image: \(width)x\(height), \(bitmap.samplesPerPixel) samples, bytesPerRow: \(bitmap.bytesPerRow)")
+
+        // Debug: Check first few pixels
+        if let bitmapData = bitmap.bitmapData {
+            print("🔍 First 12 bytes (4 RGB pixels): ", terminator: "")
+            for i in 0..<min(12, width * height * 3) {
+                print(String(format: "%02x ", bitmapData[i]), terminator: "")
+            }
+            print()
+        }
 
         // DTTensor format constants (from ccv_nnc)
         let CCV_TENSOR_CPU_MEMORY: UInt32 = 0x1
@@ -124,6 +134,7 @@ public struct ImageHelpers {
 
         tensorData.withUnsafeMutableBytes { (outPtr: UnsafeMutableRawBufferPointer) in
             let pixelDataPtr = outPtr.baseAddress!.advanced(by: 68)
+            var debugPixelCount = 0
 
             for y in 0..<height {
                 for x in 0..<width {
@@ -135,6 +146,12 @@ public struct ImageHelpers {
                         // Convert from [0, 255] to [-1, 1]: v = pixel[c] / 255 * 2 - 1
                         let floatValue = (Float(uint8Value) / 255.0 * 2.0) - 1.0
                         let float16Value = Float16(floatValue)
+
+                        // Debug first pixel
+                        if debugPixelCount < 3 {
+                            print("🔬 Pixel 0 channel \(c): uint8=\(uint8Value) -> float=\(floatValue) -> float16=\(float16Value)")
+                            debugPixelCount += 1
+                        }
 
                         // Write Float16 in little-endian format (matching Python's struct.pack "<e")
                         let bitPattern = float16Value.bitPattern
