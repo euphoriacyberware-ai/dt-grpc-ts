@@ -57,47 +57,36 @@ public struct ImageHelpers {
 
         let width = cgImage.width
         let height = cgImage.height
+        let channels = 3  // RGB
 
-        // Create RGB-only bitmap in sRGB color space
-        guard let rgbBitmap = NSBitmapImageRep(
-            bitmapDataPlanes: nil,
-            pixelsWide: width,
-            pixelsHigh: height,
-            bitsPerSample: 8,
-            samplesPerPixel: 3,
-            hasAlpha: false,
-            isPlanar: false,
-            colorSpaceName: .deviceRGB,
-            bytesPerRow: width * 3,
-            bitsPerPixel: 24
-        ) else {
+        // Create RGBA bitmap (CG requires alpha for proper context creation)
+        let bytesPerRow = width * 4  // RGBA = 4 bytes per pixel
+        var pixelData = [UInt8](repeating: 0, count: height * bytesPerRow)
+
+        guard let colorSpace = CGColorSpace(name: CGColorSpace.sRGB),
+              let context = CGContext(
+                data: &pixelData,
+                width: width,
+                height: height,
+                bitsPerComponent: 8,
+                bytesPerRow: bytesPerRow,
+                space: colorSpace,
+                bitmapInfo: CGImageAlphaInfo.noneSkipLast.rawValue
+              ) else {
             throw ImageError.conversionFailed
         }
 
-        // Draw the image into the RGB bitmap
-        NSGraphicsContext.saveGraphicsState()
-        NSGraphicsContext.current = NSGraphicsContext(bitmapImageRep: rgbBitmap)
+        // Draw the image into our RGBA buffer
+        context.draw(cgImage, in: CGRect(x: 0, y: 0, width: width, height: height))
 
-        let drawRect = NSRect(x: 0, y: 0, width: width, height: height)
-        if let context = NSGraphicsContext.current?.cgContext {
-            context.draw(cgImage, in: drawRect)
+        print("🖼️ Converting image: \(width)x\(height), RGBA source")
+
+        // Debug: Check first few RGBA pixels
+        print("🔍 First 12 RGBA bytes (3 pixels): ", terminator: "")
+        for i in 0..<min(12, pixelData.count) {
+            print(String(format: "%02x ", pixelData[i]), terminator: "")
         }
-
-        NSGraphicsContext.restoreGraphicsState()
-
-        let bitmap = rgbBitmap
-        let channels = 3  // RGB
-
-        print("🖼️ Converting image: \(width)x\(height), \(bitmap.samplesPerPixel) samples, bytesPerRow: \(bitmap.bytesPerRow)")
-
-        // Debug: Check first few pixels
-        if let bitmapData = bitmap.bitmapData {
-            print("🔍 First 12 bytes (4 RGB pixels): ", terminator: "")
-            for i in 0..<min(12, width * height * 3) {
-                print(String(format: "%02x ", bitmapData[i]), terminator: "")
-            }
-            print()
-        }
+        print()
 
         // DTTensor format constants (from ccv_nnc)
         let CCV_TENSOR_CPU_MEMORY: UInt32 = 0x1
@@ -127,22 +116,18 @@ public struct ImageHelpers {
             }
         }
 
-        // Convert bitmap to RGB float16 data in range [-1, 1]
-        guard let bitmapData = bitmap.bitmapData else {
-            throw ImageError.conversionFailed
-        }
-
+        // Convert RGBA pixel data to RGB float16 tensor data in range [-1, 1]
         tensorData.withUnsafeMutableBytes { (outPtr: UnsafeMutableRawBufferPointer) in
-            let pixelDataPtr = outPtr.baseAddress!.advanced(by: 68)
+            let tensorPixelPtr = outPtr.baseAddress!.advanced(by: 68)
             var debugPixelCount = 0
 
             for y in 0..<height {
                 for x in 0..<width {
-                    let bitmapIndex = y * bitmap.bytesPerRow + x * 3  // Always 3 bytes per pixel now
+                    let rgbaIndex = y * bytesPerRow + x * 4  // 4 bytes per pixel (RGBA)
                     let tensorOffset = 68 + (y * width + x) * 6  // 6 bytes per pixel (3 channels * 2 bytes)
 
                     for c in 0..<3 {
-                        let uint8Value = bitmapData[bitmapIndex + c]
+                        let uint8Value = pixelData[rgbaIndex + c]  // Extract R, G, or B (skip A at index 3)
                         // Convert from [0, 255] to [-1, 1]: v = pixel[c] / 255 * 2 - 1
                         let floatValue = (Float(uint8Value) / 255.0 * 2.0) - 1.0
                         let float16Value = Float16(floatValue)
@@ -156,7 +141,7 @@ public struct ImageHelpers {
                         // Write Float16 in little-endian format (matching Python's struct.pack "<e")
                         let bitPattern = float16Value.bitPattern
                         let byteOffset = tensorOffset - 68 + c * 2
-                        pixelDataPtr.storeBytes(of: bitPattern.littleEndian, toByteOffset: byteOffset, as: UInt16.self)
+                        tensorPixelPtr.storeBytes(of: bitPattern.littleEndian, toByteOffset: byteOffset, as: UInt16.self)
                     }
                 }
             }
