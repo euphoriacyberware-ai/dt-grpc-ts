@@ -100,16 +100,27 @@ public actor DrawThingsService {
             $0.configuration = configuration
 
             print("📤 Sending request: prompt='\(prompt)', config size=\(configuration.count) bytes")
-            
+
             if let image = image {
                 $0.image = image
+                print("   Image data: \(image.count) bytes")
             }
-            
+
             if let mask = mask {
                 $0.mask = mask
+                print("   Mask data: \(mask.count) bytes")
             }
-            
+
             $0.hints = hints
+            if !hints.isEmpty {
+                print("   Hints: \(hints.count) hint(s)")
+                for (index, hint) in hints.enumerated() {
+                    print("      Hint \(index): type='\(hint.hintType)', tensors=\(hint.tensors.count)")
+                    for (tIndex, tensor) in hint.tensors.enumerated() {
+                        print("         Tensor \(tIndex): size=\(tensor.tensor.count) bytes, weight=\(tensor.weight)")
+                    }
+                }
+            }
             $0.contents = contents
             
             if let override = override {
