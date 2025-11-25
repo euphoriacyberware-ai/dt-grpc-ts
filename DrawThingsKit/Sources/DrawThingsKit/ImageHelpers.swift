@@ -476,29 +476,42 @@ public struct ImageHelpers {
             alphaPosition = samplesPerPixel - 1  // RGBA
         }
 
-        // Create mask data with Draw Things header format
-        // Header: [0, 1, 1, 4096, 0, height, width, 0, 0] as Int32
-        var maskData = Data(capacity: 36 + width * height)
+        // Create mask with special Draw Things mask format
+        // From Draw Things docs: header is [0, 1, 1, 4096, 0, height, width, 0, 0] as Int32
+        // Total size: 68 bytes header + width*height bytes data
+        var maskData = Data(count: 68 + width * height)
 
-        // Write header (9 x Int32 = 36 bytes)
-        let header: [Int32] = [0, 1, 1, 4096, 0, Int32(height), Int32(width), 0, 0]
-        for value in header {
-            var int32Value = value
-            maskData.append(Data(bytes: &int32Value, count: 4))
+        // Write mask header (9 Int32 values = 36 bytes, padded to 68 bytes)
+        maskData.withUnsafeMutableBytes { (ptr: UnsafeMutableRawBufferPointer) in
+            let int32Ptr = ptr.baseAddress!.assumingMemoryBound(to: Int32.self)
+            int32Ptr[0] = 0
+            int32Ptr[1] = 1
+            int32Ptr[2] = 1
+            int32Ptr[3] = 4096
+            int32Ptr[4] = 0
+            int32Ptr[5] = Int32(height)
+            int32Ptr[6] = Int32(width)
+            int32Ptr[7] = 0
+            int32Ptr[8] = 0
+            // Remaining bytes up to 68 are already zeroed
         }
 
-        // Write mask data (UInt8 values)
+        // Write mask data (UInt8 values) starting at offset 68
         // 0 = retain/preserve (opaque pixels)
         // 2 = inpaint with config strength (transparent pixels)
-        for y in 0..<height {
-            for x in 0..<width {
-                let pixelIndex = y * bytesPerRow + x * samplesPerPixel
-                let alpha = pixelData[pixelIndex + alphaPosition]
+        maskData.withUnsafeMutableBytes { (ptr: UnsafeMutableRawBufferPointer) in
+            let maskPtr = ptr.baseAddress!.advanced(by: 68).assumingMemoryBound(to: UInt8.self)
 
-                // Transparent (alpha < 255) = 2 (inpaint)
-                // Opaque (alpha = 255) = 0 (preserve)
-                let maskValue: UInt8 = alpha < 255 ? 2 : 0
-                maskData.append(maskValue)
+            for y in 0..<height {
+                for x in 0..<width {
+                    let pixelIndex = y * bytesPerRow + x * samplesPerPixel
+                    let alpha = pixelData[pixelIndex + alphaPosition]
+
+                    // Transparent (alpha < 255) = 2 (inpaint)
+                    // Opaque (alpha = 255) = 0 (preserve)
+                    let maskValue: UInt8 = alpha < 255 ? 2 : 0
+                    maskPtr[y * width + x] = maskValue
+                }
             }
         }
 
